@@ -1,1 +1,1 @@
-# Godot-Gravity-Simulator
+# godot-gravity-simulator
