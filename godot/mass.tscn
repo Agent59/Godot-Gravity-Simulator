@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://c5tsgjo0h0ycn"]
+
+[ext_resource type="Texture2D" uid="uid://c5sigv42c2krd" path="res://art/red_circle.png" id="1_yledc"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_amfmk"]
+radius = 16.0
+
+[node name="Mass" type="RigidBody2D"]
+can_sleep = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_amfmk")
+
+[node name="RedCircle" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("1_yledc")
