@@ -1,6 +1,6 @@
 use std::ops;
 
-use crate::fmm::Scalar;
+use crate::base::Scalar;
 
 #[derive(Debug, Clone, Copy)]
 pub struct Vec2 {

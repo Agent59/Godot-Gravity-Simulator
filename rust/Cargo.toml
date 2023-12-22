@@ -8,3 +8,6 @@ crate-type = ["cdylib"] # Compiles this crate to a dynamic C library
 
 [dependencies]
 godot = { git = "https://github.com/godot-rust/gdext", branch = "master" }
+
+[features]
+qtree_with_cells = []

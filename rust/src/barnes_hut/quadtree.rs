@@ -1,4 +1,5 @@
-use crate::fmm::{Scalar, Cell, Object};
+use crate::base::{Scalar, Object};
+use crate::barnes_hut::Cell;
 
 /// The coordinates describe the center of mass for that cell.
 #[derive(Debug, Clone)]
@@ -7,6 +8,8 @@ pub struct Quadtree {
     y: Scalar,
     m: Scalar,
     children: Vec<Option<Self>>,
+    #[cfg(feature = "qtree_with_cells")]
+    cell: Cell,
 }
 
 impl Quadtree {
@@ -51,7 +54,9 @@ impl Quadtree {
             x,
             y,
             m,
-            children: vec![None, None, None, None],
+            children: vec![None; 4],
+            #[cfg(feature = "qtree_with_cells")]
+            cell: Cell::new(x, y, m),
         }
     }
 
@@ -138,8 +143,54 @@ impl Quadtree {
         self.children[quadrant] = Some(Self::leaf(x, y, m))
     }
 
+    /// Calls the provided function for every node with the nodes properties.
+    /// The functions parameters should be fn(node_x, node_y, node_m, level).
+    #[cfg(not(feature = "qtree_with_cells"))]
+    pub fn do_on_nodes<T>(&self, f: &mut impl FnMut(Scalar, Scalar, Scalar, usize) -> T) -> T {
+        self.do_on_nodes_helper_func(0, f)
+    }
+
+    /// Calls the provided function for every node with the nodes properties.
+    /// The functions parameters should be fn(node_x, node_y, node_m, cell, level).
+    #[cfg(feature = "qtree_with_cells")]
+    pub fn do_on_nodes<T>(&self, f: &mut impl FnMut(Scalar, Scalar, Scalar, Cell, usize) -> T) -> T {
+        self.do_on_nodes_helper_func(0, f)
+    }
+
+    /// Is used by do_on_nodes.
+    /// Needs to be given a starting level to correctly calculate the current level.
+    /// The provided level must always be zero.
+    /// Calls the provided function for every node with the nodes properties.
+    /// The functions parameters should be fn(node_x, node_y, node_m, level).
+    #[cfg(not(feature = "qtree_with_cells"))]
+    fn do_on_nodes_helper_func<T>(&self, level: usize, f: &mut impl FnMut(Scalar, Scalar, Scalar, usize) -> T) -> T {
+        let result = f(self.x, self.y, self.m, level);
+        for opt_child in &self.children {
+            if let Some(child) = opt_child {
+                child.do_on_nodes_helper_func(level + 1, f);
+            }
+        }
+        result
+    }
+
+    /// Is used by do_on_nodes.
+    /// Needs to be given a starting level to correctly calculate the current level.
+    /// The provided level must always be zero.
+    /// Calls the provided function for every node with the nodes properties.
+    /// The functions parameters should be fn(node_x, node_y, node_m, cell, level).
+    #[cfg(feature = "qtree_with_cells")]
+    fn do_on_nodes_helper_func<T>(&self, level: usize, f: &mut impl FnMut(Scalar, Scalar, Scalar, Cell, usize) -> T) -> T {
+        let result = f(self.x, self.y, self.m, self.cell, level);
+        for opt_child in &self.children {
+            if let Some(child) = opt_child {
+                child.do_on_nodes_helper_func(level + 1, f);
+            }
+        }
+        result
+    }
+
     /// Returns a list of all the leaves.
-    /// TODO Probably very memory intese at the moment.
+    /// TODO Probably very memory intese and slow at the moment.
     pub fn get_leaves(&self) -> Vec<Self> {
         let mut leaves = Vec::<Quadtree>::new();
         let mut no_child: u8 = 1;
@@ -156,32 +207,35 @@ impl Quadtree {
         }
         leaves
     }
-
-    /// TODO Probably very memory intense.
-    pub fn fmt_helper(&self, formatter: &mut std::fmt::Formatter<'_>, level: usize) -> std::fmt::Result {
-        for _ in 0..level {
-            write!(formatter, "  |  ")?;
-        }
-        write!(formatter, "({:.2}|{:.2}|{:.2})\n", self.x, self.y, self.m)?;
-            
-        for child_opt in &self.children {
-            if let Some(child) = child_opt {
-                child.fmt_helper(formatter, level + 1)?;
-            }
-        }
-        write!(formatter, "")
-    }
 }
 
 impl std::fmt::Display for Quadtree {
     fn fmt(&self, formatter: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
-        self.fmt_helper(formatter, 0)
+
+        #[cfg(not(feature = "qtree_with_cells"))]
+        let mut fmt_helper = |x: Scalar, y: Scalar, m: Scalar, level: usize| {
+            for _ in 0..level {
+                write!(formatter, "  |  ")?;
+            }
+            write!(formatter, "({:.2}|{:.2}|{:.2})\n", x, y, m)
+        };
+
+        #[cfg(feature = "qtree_with_cells")]
+        let mut fmt_helper = |x: Scalar, y: Scalar, m: Scalar, cell: Cell, level: usize| {
+            for _ in 0..level {
+                write!(formatter, "  |  ")?;
+            }
+            write!(formatter, "({:.2}|{:.2}|{:.2} | {cell})\n", x, y, m)
+        };
+
+        self.do_on_nodes(&mut fmt_helper)
     }
 }
 
 #[cfg(test)]
 mod quadtree_tests {
-    use crate::fmm::{Quadtree, Object};
+    use crate::base::*;
+    use crate::barnes_hut::Quadtree;
     
     #[test]
     fn test_tree_creation() {
@@ -200,6 +254,6 @@ mod quadtree_tests {
         for object in objects {
             println!("{:?}\n", object);
         }
-        println!("\nQuadtree ({:?}):\n{}", tree_box, qtree);
+        println!("\nQuadtree ({}):\n{}", tree_box, qtree);
     }
 }

@@ -1,26 +1,11 @@
 pub mod quadtree;
+pub mod quadtree_with_cells;
 
 pub use quadtree::Quadtree;
-pub mod vec2;
-pub use vec2::Vec2;
 
-type Scalar = f64;
+pub use crate::base::{Vec2, Object, Scalar};
 
-/// An object with a mass and a position.
-/// Could be for example a planet, an asteroid or an apple.
-/// Objects are sorted by their position, their mass is ignored in the process.
-#[derive(Debug, Clone, Copy)]
-pub struct Object {
-    x: Scalar,
-    y: Scalar,
-    m: Scalar,
-}
-
-impl Object {
-    pub fn new(x: Scalar, y: Scalar, m: Scalar) -> Self {
-        Self { x, y, m }
-    }
-}
+pub const THETA: Scalar = 1.0;
 
 /// Cells are just temporary.
 /// TODO They are utilised in the building process of the quadtree.
@@ -78,5 +63,11 @@ impl Cell {
             | 0 | 1 |\n\
             ---------")
         }
+    }
+}
+
+impl std::fmt::Display for Cell {
+    fn fmt(&self, formatter: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+        write!(formatter, "Cell(x: {}, y: {}, size: {})", self.x, self.y, self.size)
     }
 }

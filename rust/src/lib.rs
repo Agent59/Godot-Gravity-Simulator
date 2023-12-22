@@ -8,7 +8,9 @@ unsafe impl ExtensionLibrary for GodotExtension {}
 pub mod godot_aliases;
 pub mod space;
 
-pub mod fmm;
+pub mod base;
+
+pub mod barnes_hut;
 
 #[cfg(test)]
 mod tests {

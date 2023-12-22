@@ -1,4 +1,4 @@
-use crate::fmm::Vec2;
+use crate::base::Vec2;
 use godot::builtin;
 
 impl From<builtin::Vector2> for Vec2 {
