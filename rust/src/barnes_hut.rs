@@ -1,5 +1,4 @@
 pub mod quadtree;
-pub mod quadtree_with_cells;
 
 pub use quadtree::Quadtree;
 
