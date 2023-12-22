@@ -1,7 +1,7 @@
 # godot-gravity-simulator
-**A gravity simulator implemented in Rust visualized with Godot.**
+**A gravity simulator implemented in Rust and visualized with Godot.**
 
-**This is still under development**
+**!This is still under development!**
 
 There will be multiple algorithms to choose from:
 - The direct approach with O(n²)
