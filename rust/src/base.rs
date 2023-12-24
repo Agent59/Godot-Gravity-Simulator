@@ -1,7 +1,9 @@
 pub mod vec2;
 pub use vec2::Vec2;
 
-pub type Scalar = f64;
+pub type Scalar = f32;
+
+pub const G: Scalar = 6.67430e-11;
 
 /// An object with a mass and a position.
 /// Could be for example a planet, an asteroid or an apple.
@@ -16,5 +18,9 @@ pub struct Object {
 impl Object {
     pub fn new(x: Scalar, y: Scalar, m: Scalar) -> Self {
         Self { x, y, m }
+    }
+
+    pub fn pos(self) -> Vec2 {
+        Vec2::new(self.x, self.y)
     }
 }

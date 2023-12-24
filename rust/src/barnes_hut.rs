@@ -4,7 +4,7 @@ pub use quadtree::Quadtree;
 
 pub use crate::base::{Vec2, Object, Scalar};
 
-pub const THETA: Scalar = 1.0;
+pub const THETA: Scalar = 0.5;
 
 /// Cells are just temporary.
 /// TODO They are utilised in the building process of the quadtree.

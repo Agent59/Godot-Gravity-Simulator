@@ -5,16 +5,15 @@
 [node name="Main" type="Node2D"]
 
 [node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(0.5, 0.5)
 
 [node name="Space" type="Space" parent="."]
 
-[node name="Mass" parent="Space" instance=ExtResource("1_4kpoy")]
+[node name="ISS" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(400, 0)
+mass = 440000.0
+continuous_cd = 1
+linear_velocity = Vector2(0, 350)
 
-[node name="Mass2" parent="Space" instance=ExtResource("1_4kpoy")]
-position = Vector2(-81, 23)
-
-[node name="Mass3" parent="Space" instance=ExtResource("1_4kpoy")]
-position = Vector2(40, 31)
-
-[node name="Mass4" parent="Space" instance=ExtResource("1_4kpoy")]
-position = Vector2(-41, 99)
+[node name="Erde" parent="Space" instance=ExtResource("1_4kpoy")]
+mass = 1e+18

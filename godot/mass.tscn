@@ -1,5 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://c5tsgjo0h0ycn"]
+[gd_scene load_steps=4 format=3 uid="uid://c5tsgjo0h0ycn"]
 
+[ext_resource type="Script" path="res://mass.gd" id="1_lplw3"]
 [ext_resource type="Texture2D" uid="uid://c5sigv42c2krd" path="res://art/red_circle.png" id="1_yledc"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_amfmk"]
@@ -7,6 +8,7 @@ radius = 16.0
 
 [node name="Mass" type="RigidBody2D"]
 can_sleep = false
+script = ExtResource("1_lplw3")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_amfmk")

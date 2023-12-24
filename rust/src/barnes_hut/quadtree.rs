@@ -1,4 +1,4 @@
-use crate::base::{Scalar, Object};
+use crate::base::{Scalar, Object, Vec2, G};
 use crate::barnes_hut::Cell;
 
 /// The coordinates describe the center of mass for that cell.
@@ -8,7 +8,6 @@ pub struct Quadtree {
     y: Scalar,
     m: Scalar,
     children: Vec<Option<Self>>,
-    #[cfg(feature = "qtree_with_cells")]
     cell: Cell,
 }
 
@@ -16,7 +15,7 @@ impl Quadtree {
     /// Creates a quadtree from a set of objects.
     /// The cell configures the size of the quadtree.
     pub fn create_from_objects(objects: Vec<Object>, cell: Cell) -> Self {
-        let mut root = Self::leaf(cell.x, cell.y, 0.);
+        let mut root = Self::leaf(cell.x, cell.y, 0., cell);
 
         for object in objects {
             root.insert(object.x, object.y, object.m, cell);
@@ -26,6 +25,7 @@ impl Quadtree {
 
     /// Returns a cell that has the size and the origin a quadtree,
     /// which is build with the same objects, should be based on.
+    /// TODO WARNING this is not the minimal bounding box.
     pub fn calc_tree_box(objects: &Vec<Object>) -> Cell {
         let mut smallest_x = objects[0].x;
         let mut largest_x = objects[0].x;
@@ -49,14 +49,13 @@ impl Quadtree {
     /// Creates an empty quadtree node.
     /// Because it is a leaf, it represents an object
     /// or if m == 0 an empty quadtree.
-    pub fn leaf(x: Scalar, y: Scalar, m: Scalar) -> Self {
+    pub fn leaf(x: Scalar, y: Scalar, m: Scalar, cell: Cell) -> Self {
         Self {
             x,
             y,
             m,
             children: vec![None; 4],
-            #[cfg(feature = "qtree_with_cells")]
-            cell: Cell::new(x, y, m),
+            cell,
         }
     }
 
@@ -102,7 +101,7 @@ impl Quadtree {
 
                 // Creates a cell that contains both objects.
                 // The center of mass stays the same and does not need to be updated.
-                current.new_child(quadrant, current.x, current.y, current.m);
+                current.new_child(quadrant, current.x, current.y, current.m, current_cell.child(quadrant));
 
                 current = current.children[quadrant].as_mut().unwrap();
                 current_cell = current_cell.child(quadrant);
@@ -112,12 +111,12 @@ impl Quadtree {
             }
             // Once the quadrants are different, a node is created for each object.
             // (The node for the other object is created further below)
-            current.new_child(quadrant2, x2, y2, m2);
+            current.new_child(quadrant2, x2, y2, m2, current_cell.child(quadrant2));
         }
         // If the node is not a leaf
         // and the node does not contain a child in which the object would fit,
         // a child, which represents the object, is created.
-        current.new_child(quadrant, x, y, m);
+        current.new_child(quadrant, x, y, m, current_cell.child(quadrant));
     }
 
     /// Updates the center of mass.
@@ -139,20 +138,30 @@ impl Quadtree {
     }
 
     /// Adds a child under the node.
-    pub fn new_child(&mut self, quadrant: usize, x: Scalar, y: Scalar, m: Scalar) {
-        self.children[quadrant] = Some(Self::leaf(x, y, m))
+    pub fn new_child(&mut self, quadrant: usize, x: Scalar, y: Scalar, m: Scalar, cell: Cell) {
+        self.children[quadrant] = Some(Self::leaf(x, y, m, cell))
     }
 
-    /// Calls the provided function for every node with the nodes properties.
-    /// The functions parameters should be fn(node_x, node_y, node_m, level).
-    #[cfg(not(feature = "qtree_with_cells"))]
-    pub fn do_on_nodes<T>(&self, f: &mut impl FnMut(Scalar, Scalar, Scalar, usize) -> T) -> T {
-        self.do_on_nodes_helper_func(0, f)
+    /// Calculates the total force that acts on the provided body
+    /// for the accuracy θ.
+    pub fn calc_force(&self, obj: Object, theta: Scalar) -> Vec2 {
+        let mut total_force = Vec2::new(0., 0.);
+
+        type QTFCI<'a> = QuadtreeForceCalculationIterator<'a>;
+
+        for obj2 in QTFCI::new(obj.pos(), theta, self) {
+            let r_vec = obj2.pos() - obj.pos();
+
+            if r_vec.length() == 0. { continue; }
+
+            let force = G * ((obj.m * obj2.m) / r_vec.length().powf(3.)) * r_vec;
+            total_force += force;
+        }
+        total_force
     }
 
     /// Calls the provided function for every node with the nodes properties.
     /// The functions parameters should be fn(node_x, node_y, node_m, cell, level).
-    #[cfg(feature = "qtree_with_cells")]
     pub fn do_on_nodes<T>(&self, f: &mut impl FnMut(Scalar, Scalar, Scalar, Cell, usize) -> T) -> T {
         self.do_on_nodes_helper_func(0, f)
     }
@@ -161,24 +170,7 @@ impl Quadtree {
     /// Needs to be given a starting level to correctly calculate the current level.
     /// The provided level must always be zero.
     /// Calls the provided function for every node with the nodes properties.
-    /// The functions parameters should be fn(node_x, node_y, node_m, level).
-    #[cfg(not(feature = "qtree_with_cells"))]
-    fn do_on_nodes_helper_func<T>(&self, level: usize, f: &mut impl FnMut(Scalar, Scalar, Scalar, usize) -> T) -> T {
-        let result = f(self.x, self.y, self.m, level);
-        for opt_child in &self.children {
-            if let Some(child) = opt_child {
-                child.do_on_nodes_helper_func(level + 1, f);
-            }
-        }
-        result
-    }
-
-    /// Is used by do_on_nodes.
-    /// Needs to be given a starting level to correctly calculate the current level.
-    /// The provided level must always be zero.
-    /// Calls the provided function for every node with the nodes properties.
     /// The functions parameters should be fn(node_x, node_y, node_m, cell, level).
-    #[cfg(feature = "qtree_with_cells")]
     fn do_on_nodes_helper_func<T>(&self, level: usize, f: &mut impl FnMut(Scalar, Scalar, Scalar, Cell, usize) -> T) -> T {
         let result = f(self.x, self.y, self.m, self.cell, level);
         for opt_child in &self.children {
@@ -212,15 +204,6 @@ impl Quadtree {
 impl std::fmt::Display for Quadtree {
     fn fmt(&self, formatter: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
 
-        #[cfg(not(feature = "qtree_with_cells"))]
-        let mut fmt_helper = |x: Scalar, y: Scalar, m: Scalar, level: usize| {
-            for _ in 0..level {
-                write!(formatter, "  |  ")?;
-            }
-            write!(formatter, "({:.2}|{:.2}|{:.2})\n", x, y, m)
-        };
-
-        #[cfg(feature = "qtree_with_cells")]
         let mut fmt_helper = |x: Scalar, y: Scalar, m: Scalar, cell: Cell, level: usize| {
             for _ in 0..level {
                 write!(formatter, "  |  ")?;
@@ -232,6 +215,43 @@ impl std::fmt::Display for Quadtree {
     }
 }
 
+struct QuadtreeForceCalculationIterator<'a> {
+    pos: Vec2,
+    theta: Scalar,
+    sub_trees: Vec<&'a Quadtree>,
+}
+
+impl<'a> QuadtreeForceCalculationIterator<'a> {
+    pub fn new(pos: Vec2, theta: Scalar, qtree: &'a Quadtree) -> Self {
+        Self { pos, theta, sub_trees: vec![qtree], }
+    }
+}
+
+/// Returns the next Object that is needed to calculate the total force.
+/// The returned Object represents a center of masse or a single mass.
+impl<'a> Iterator for QuadtreeForceCalculationIterator<'a> {
+    type Item = Object;
+
+    fn next(&mut self) -> Option<Self::Item> {
+        while !self.sub_trees.is_empty() {
+            let sub_tree = self.sub_trees.pop()?;
+
+            let distance = (Vec2::new(sub_tree.x, sub_tree.y) - self.pos).length();
+            
+            if sub_tree.cell.size / distance < self.theta || sub_tree.is_leaf() {
+                return Some(Object::new(sub_tree.x, sub_tree.y, sub_tree.m))
+            }
+
+            for opt_child in &sub_tree.children {
+                if let Some(child_tree) = opt_child {
+                    self.sub_trees.push(&child_tree);
+                }
+            }
+        }
+        None
+    }
+}
+
 #[cfg(test)]
 mod quadtree_tests {
     use crate::base::*;
@@ -240,7 +260,7 @@ mod quadtree_tests {
     #[test]
     fn test_tree_creation() {
         let mut objects = Vec::<Object>::new();
-        for i in (1..10).map(|i| i as f64) {
+        for i in (1..10).map(|i| i as Scalar) {
             let object = Object::new(i, i, 1.);
             objects.push(object);
         }
