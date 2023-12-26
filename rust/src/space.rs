@@ -1,8 +1,15 @@
+#[allow(unused_imports)]
 use crate::base::{Scalar, Object, Vec2};
+
+#[cfg(feature = "direct")]
+use crate::direct::apply_forces;
+
+#[cfg(feature = "barnes_hut")]
 use crate::barnes_hut::{Quadtree, Cell, THETA};
 
+#[allow(unused_imports)]
+use godot::engine::RigidBody2D;
 use godot::prelude::*;
-use godot::engine::{Node2D, INode2D, RigidBody2D};
 
 #[cfg(feature = "barnes_hut_parallel_force_calc")]
 use std::{thread, sync::{Mutex, Arc}};
@@ -52,7 +59,27 @@ impl INode2D for Space {
 
     #[cfg(feature = "direct")]
     fn physics_process(&mut self, _delta: f64) {
-        godot_print!("Not yet implemented");
+        let start = Instant::now();
+
+        // The godot representation of masses
+        let mut bodies = Vec::<Gd<RigidBody2D>>::new();
+        // The custom representation of masses
+        let mut objects = Vec::<Object>::new();
+
+        for child in self.node2d.get_children().iter_shared() {
+            if child.get("resource_name".into()).to_string() == "Mass" {
+                // "." is the current node
+                let rigid_body2d = child.try_get_node_as::<RigidBody2D>(".").unwrap();                
+                
+                objects.push(Object::copy_from_rigidbody(&rigid_body2d));
+                bodies.push(rigid_body2d);
+            }
+        }
+        apply_forces(&objects, |i, force| {
+            bodies[i].apply_force(force.into());
+        });
+
+        godot_print!("gravity force time: {}ms", start.elapsed().as_millis());
     }
 
     #[cfg(feature = "barnes_hut")]
@@ -128,7 +155,7 @@ fn barnes_hut_calc_forces(qtree: Quadtree, objects: Vec<Object>, mut bodies: Vec
     }
 }
 
-/// This is probably very inefficient!
+/// This is probably inefficient!
 #[cfg(feature = "barnes_hut_parallel_force_calc")]
 fn barnes_hut_calc_forces(qtree: Quadtree, mut objects: Vec<Object>, mut bodies: Vec<Gd<RigidBody2D>>, theta: Scalar)  {
     // Splits the array of objects into two arrays

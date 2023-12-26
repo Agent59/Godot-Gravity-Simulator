@@ -10,6 +10,7 @@ pub mod space;
 
 pub mod base;
 
+pub mod direct;
 pub mod barnes_hut;
 
 #[cfg(test)]
