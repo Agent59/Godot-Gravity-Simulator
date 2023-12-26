@@ -1,4 +1,4 @@
-# godot-gravity-simulator
+# Godot-Gravity-Simulator
 **A gravity simulator implemented in Rust and visualized with Godot.**
 
 **!This is still under development!**
