@@ -8,6 +8,7 @@
 zoom = Vector2(0.08, 0.08)
 
 [node name="Space" type="Space" parent="."]
+theta = 1.5
 
 [node name="LargeMass1" parent="Space" instance=ExtResource("1_u2ifx")]
 mass = 1e+18

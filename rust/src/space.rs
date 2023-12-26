@@ -1,4 +1,4 @@
-use crate::base::{Object, Vec2};
+use crate::base::{Scalar, Object, Vec2};
 use crate::barnes_hut::{Quadtree, Cell, THETA};
 
 use godot::prelude::*;
@@ -13,20 +13,31 @@ use std::time::Instant;
 #[derive(GodotClass)]
 #[class(base=Node2D)]
 struct Space {
-    
     #[base]
-    node2d: Base<Node2D>
+    node2d: Base<Node2D>,
+
+    #[cfg(feature = "barnes_hut")]
+    #[export]
+    theta: f32,
 }
+
+// Needed, otherwise the #[export] wont work.
+#[cfg(feature = "barnes_hut")]
+#[godot_api]
+impl Space {}
 
 #[godot_api]
 impl INode2D for Space {
+    #[cfg(not(feature = "barnes_hut"))]
     fn init(node2d: Base<Node2D>) -> Self {
-        godot_print!("Space!");
-
-        Self {
-            node2d
-        }
+        Self { node2d }
     }
+
+    #[cfg(feature = "barnes_hut")]
+    fn init(node2d: Base<Node2D>) -> Self {
+        Self { node2d, theta: THETA }
+    }
+
 
     // If no algorithm is specified as a feature, a warning is thrown
     #[cfg(not(any(feature = "direct", feature = "barnes_hut", feature = "fmm")))]
@@ -95,7 +106,7 @@ impl INode2D for Space {
 
         let force_calc_start = Instant::now();
 
-        barnes_hut_calc_forces(qtree, objects, bodies);
+        barnes_hut_calc_forces(qtree, objects, bodies, self.theta);
 
         godot_print!("gravity force time: {}ms", force_calc_start.elapsed().as_millis());
 
@@ -110,17 +121,16 @@ impl INode2D for Space {
 }
 
 #[cfg(all(feature = "barnes_hut", not(feature = "barnes_hut_parallel_force_calc")))]
-fn barnes_hut_calc_forces(qtree: Quadtree, objects: Vec<Object>, mut bodies: Vec<Gd<RigidBody2D>>)  {
+fn barnes_hut_calc_forces(qtree: Quadtree, objects: Vec<Object>, mut bodies: Vec<Gd<RigidBody2D>>, theta: Scalar)  {
     for (i, body) in bodies.iter_mut().enumerate() {
-        // let force = qtree.calc_force(Object::copy_from_rigidbody(&body), THETA);
-        let force = qtree.calc_force(objects[i], THETA);
+        let force = qtree.calc_force(objects[i], theta);
         body.apply_force(force.into());
     }
 }
 
 /// This is probably very inefficient!
 #[cfg(feature = "barnes_hut_parallel_force_calc")]
-fn barnes_hut_calc_forces(qtree: Quadtree, mut objects: Vec<Object>, mut bodies: Vec<Gd<RigidBody2D>>)  {
+fn barnes_hut_calc_forces(qtree: Quadtree, mut objects: Vec<Object>, mut bodies: Vec<Gd<RigidBody2D>>, theta: Scalar)  {
     // Splits the array of objects into two arrays
     let objects2 = objects.split_off(objects.len() / 2);
 
@@ -131,13 +141,13 @@ fn barnes_hut_calc_forces(qtree: Quadtree, mut objects: Vec<Object>, mut bodies:
     let thread2 = thread::spawn(move || {
         let mut forces2 = forces2_arc_clone.lock().unwrap();
         for object2 in objects2 {
-            forces2.push(qtree2.calc_force(object2, THETA));
+            forces2.push(qtree2.calc_force(object2, theta));
         }
     });
 
     // thread1 is the current thread.
     for (i, object) in objects.iter().enumerate() {
-        let force = qtree.calc_force(*object, THETA);
+        let force = qtree.calc_force(*object, theta);
         bodies[i].apply_force(force.into());
     }
 
