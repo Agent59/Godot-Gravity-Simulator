@@ -17,9 +17,12 @@ config/icon="res://icon.svg"
 
 [physics]
 
+common/physics_ticks_per_second=120
+common/physics_jitter_fix=0.0
 3d/default_gravity=0.0
 3d/default_gravity_vector=Vector3(0, 0, 0)
 2d/default_gravity=0.0
 2d/default_gravity_vector=Vector2(0, 0)
 2d/default_linear_damp=0.0
 2d/default_angular_damp=0.0
+common/default_angular_damp=0.1

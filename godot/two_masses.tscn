@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3 uid="uid://bgpg0vji00tg3"]
+
+[ext_resource type="PackedScene" uid="uid://c5tsgjo0h0ycn" path="res://mass.tscn" id="1_x3c6e"]
+
+[node name="TwoMasses" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(0.5, 0.5)
+
+[node name="Space" type="Space" parent="."]
+
+[node name="Mass1" parent="Space" instance=ExtResource("1_x3c6e")]
+position = Vector2(400, 0)
+mass = 440000.0
+linear_velocity = Vector2(0, 350)
+
+[node name="Mass2" parent="Space" instance=ExtResource("1_x3c6e")]
+mass = 1e+18

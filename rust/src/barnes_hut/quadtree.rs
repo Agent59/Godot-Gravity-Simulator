@@ -14,7 +14,7 @@ pub struct Quadtree {
 impl Quadtree {
     /// Creates a quadtree from a set of objects.
     /// The cell configures the size of the quadtree.
-    pub fn create_from_objects(objects: Vec<Object>, cell: Cell) -> Self {
+    pub fn create_from_objects(objects: &Vec<Object>, cell: Cell) -> Self {
         let mut root = Self::leaf(cell.x, cell.y, 0., cell);
 
         for object in objects {

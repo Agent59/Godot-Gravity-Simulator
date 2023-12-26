@@ -5,15 +5,2009 @@
 [node name="Main" type="Node2D"]
 
 [node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(0.5, 0.5)
+zoom = Vector2(0.1, 0.1)
 
 [node name="Space" type="Space" parent="."]
 
-[node name="ISS" parent="Space" instance=ExtResource("1_4kpoy")]
+[node name="Mass1" parent="Space" instance=ExtResource("1_4kpoy")]
 position = Vector2(400, 0)
-mass = 440000.0
-continuous_cd = 1
-linear_velocity = Vector2(0, 350)
+mass = 1e+16
 
-[node name="Erde" parent="Space" instance=ExtResource("1_4kpoy")]
+[node name="Mass2" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(800, 0)
+mass = 1e+16
+
+[node name="Mass3" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(112, -408)
+mass = 1e+16
+
+[node name="Mass4" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(912, -456)
+mass = 1e+16
+
+[node name="Mass5" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-912, 400)
+mass = 1e+16
+
+[node name="Mass6" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-160, -128)
+mass = 1e+16
+
+[node name="Mass7" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-560, -128)
+mass = 1e+16
+
+[node name="Mass8" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-448, -536)
+mass = 1e+16
+
+[node name="Mass9" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(352, -584)
+mass = 1e+16
+
+[node name="Mass10" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-336, 432)
+mass = 1e+16
+
+[node name="Mass11" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(520, 136)
+mass = 1e+16
+
+[node name="Mass12" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(120, 136)
+mass = 1e+16
+
+[node name="Mass13" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(232, -272)
+mass = 1e+16
+
+[node name="Mass14" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(1032, -320)
+mass = 1e+16
+
+[node name="Mass15" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-792, 536)
+mass = 1e+16
+
+[node name="Mass16" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(120, -104)
+mass = 1e+16
+
+[node name="Mass17" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-440, 8)
+mass = 1e+16
+
+[node name="Mass18" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-328, -400)
+mass = 1e+16
+
+[node name="Mass19" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(472, -448)
+mass = 1e+16
+
+[node name="Mass20" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(4331, 3204)
+mass = 1e+16
+
+[node name="Mass21" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(4466, 2119)
+mass = 1e+16
+
+[node name="Mass22" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(4149, 2074)
+mass = 1e+16
+
+[node name="Mass23" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(4178, 1711)
+mass = 1e+16
+
+[node name="Mass24" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(4978, 1663)
+mass = 1e+16
+
+[node name="Mass25" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(3154, 2519)
+mass = 1e+16
+
+[node name="Mass26" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(3906, 1991)
+mass = 1e+16
+
+[node name="Mass27" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(3506, 1991)
+mass = 1e+16
+
+[node name="Mass28" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(3618, 1583)
+mass = 1e+16
+
+[node name="Mass29" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(4418, 1535)
+mass = 1e+16
+
+[node name="Mass30" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(3730, 2551)
+mass = 1e+16
+
+[node name="Mass31" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(4586, 2255)
+mass = 1e+16
+
+[node name="Mass32" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(4186, 2255)
+mass = 1e+16
+
+[node name="Mass33" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(4298, 1847)
+mass = 1e+16
+
+[node name="Mass34" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(5098, 1799)
+mass = 1e+16
+
+[node name="Mass35" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(3274, 2655)
+mass = 1e+16
+
+[node name="Mass36" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(4026, 2127)
+mass = 1e+16
+
+[node name="Mass37" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(3626, 2127)
+mass = 1e+16
+
+[node name="Mass38" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(3738, 1719)
+mass = 1e+16
+
+[node name="Mass39" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(4538, 1671)
+mass = 1e+16
+
+[node name="Mass40" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(4154, 2423)
+mass = 1e+16
+
+[node name="Mass41" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-4722, 3199)
+mass = 1e+16
+
+[node name="Mass42" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-3304, 1556)
+mass = 1e+16
+
+[node name="Mass43" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-3704, 1556)
+mass = 1e+16
+
+[node name="Mass44" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-3592, 1148)
+mass = 1e+16
+
+[node name="Mass45" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-2792, 1100)
+mass = 1e+16
+
+[node name="Mass46" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-4616, 1956)
+mass = 1e+16
+
+[node name="Mass47" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-3864, 1428)
+mass = 1e+16
+
+[node name="Mass48" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-4264, 1428)
+mass = 1e+16
+
+[node name="Mass49" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-4152, 1020)
+mass = 1e+16
+
+[node name="Mass50" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-3352, 972)
+mass = 1e+16
+
+[node name="Mass51" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-4040, 1988)
+mass = 1e+16
+
+[node name="Mass52" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-3184, 1692)
+mass = 1e+16
+
+[node name="Mass53" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-3584, 1692)
+mass = 1e+16
+
+[node name="Mass54" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-3472, 1284)
+mass = 1e+16
+
+[node name="Mass55" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-2672, 1236)
+mass = 1e+16
+
+[node name="Mass56" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-4496, 2092)
+mass = 1e+16
+
+[node name="Mass57" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-3554, 1513)
+mass = 1e+16
+
+[node name="Mass58" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-4144, 1564)
+mass = 1e+16
+
+[node name="Mass59" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-4032, 1156)
+mass = 1e+16
+
+[node name="Mass60" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-3232, 1108)
+mass = 1e+16
+
+[node name="Mass61" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-3616, 1860)
+mass = 1e+16
+
+[node name="Mass62" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-205, -2723)
+mass = 1e+16
+
+[node name="Mass63" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-605, -2723)
+mass = 1e+16
+
+[node name="Mass64" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-493, -3131)
+mass = 1e+16
+
+[node name="Mass65" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(307, -3179)
+mass = 1e+16
+
+[node name="Mass66" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-1517, -2323)
+mass = 1e+16
+
+[node name="Mass67" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-765, -2851)
+mass = 1e+16
+
+[node name="Mass68" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-1165, -2851)
+mass = 1e+16
+
+[node name="Mass69" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-1053, -3259)
+mass = 1e+16
+
+[node name="Mass70" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-253, -3307)
+mass = 1e+16
+
+[node name="Mass71" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-941, -1426)
+mass = 1e+16
+
+[node name="Mass72" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-85, -2587)
+mass = 1e+16
+
+[node name="Mass73" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-485, -2587)
+mass = 1e+16
+
+[node name="Mass74" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-373, -2995)
+mass = 1e+16
+
+[node name="Mass75" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(427, -3043)
+mass = 1e+16
+
+[node name="Mass76" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-1397, -1322)
+mass = 1e+16
+
+[node name="Mass77" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-471, -2830)
+mass = 1e+16
+
+[node name="Mass78" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-1045, -2715)
+mass = 1e+16
+
+[node name="Mass79" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-933, -3123)
+mass = 1e+16
+
+[node name="Mass80" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-133, -3171)
+mass = 1e+16
+
+[node name="Mass81" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(3077, 1013)
+mass = 1e+16
+
+[node name="Mass82" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(3861, -237)
+mass = 1e+16
+
+[node name="Mass83" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(3559, -328)
+mass = 1e+16
+
+[node name="Mass84" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(3573, -645)
+mass = 1e+16
+
+[node name="Mass85" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(4373, -693)
+mass = 1e+16
+
+[node name="Mass86" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(2549, 163)
+mass = 1e+16
+
+[node name="Mass87" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(3301, -365)
+mass = 1e+16
+
+[node name="Mass88" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(2901, -365)
+mass = 1e+16
+
+[node name="Mass89" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(3013, -773)
+mass = 1e+16
+
+[node name="Mass90" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(3813, -821)
+mass = 1e+16
+
+[node name="Mass91" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(3125, 195)
+mass = 1e+16
+
+[node name="Mass92" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(3981, -101)
+mass = 1e+16
+
+[node name="Mass93" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(3581, -101)
+mass = 1e+16
+
+[node name="Mass94" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(3693, -509)
+mass = 1e+16
+
+[node name="Mass95" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(4493, -557)
+mass = 1e+16
+
+[node name="Mass96" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(2669, 797)
+mass = 1e+16
+
+[node name="Mass97" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(3421, -229)
+mass = 1e+16
+
+[node name="Mass98" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(3021, -229)
+mass = 1e+16
+
+[node name="Mass99" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(3133, -637)
+mass = 1e+16
+
+[node name="Mass100" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(3933, -685)
+mass = 1e+16
+
+[node name="Mass101" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(3549, 67)
+mass = 1e+16
+
+[node name="Mass102" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-4693, 450)
+mass = 1e+16
+
+[node name="Mass103" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-4401, -590)
+mass = 1e+16
+
+[node name="Mass104" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-4801, -590)
+mass = 1e+16
+
+[node name="Mass105" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-4689, -998)
+mass = 1e+16
+
+[node name="Mass106" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-3889, -1046)
+mass = 1e+16
+
+[node name="Mass107" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-5713, -190)
+mass = 1e+16
+
+[node name="Mass108" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-4961, -718)
+mass = 1e+16
+
+[node name="Mass109" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-5361, -718)
+mass = 1e+16
+
+[node name="Mass110" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-5249, -1126)
+mass = 1e+16
+
+[node name="Mass111" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-4449, -1174)
+mass = 1e+16
+
+[node name="Mass112" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-5137, -158)
+mass = 1e+16
+
+[node name="Mass113" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-4281, -454)
+mass = 1e+16
+
+[node name="Mass114" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-4681, -454)
+mass = 1e+16
+
+[node name="Mass115" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-4569, -862)
+mass = 1e+16
+
+[node name="Mass116" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-3277, -622)
+mass = 1e+16
+
+[node name="Mass117" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-5593, -54)
+mass = 1e+16
+
+[node name="Mass118" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-4665, -614)
+mass = 1e+16
+
+[node name="Mass119" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-5241, -582)
+mass = 1e+16
+
+[node name="Mass120" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-5129, -990)
+mass = 1e+16
+
+[node name="Mass121" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-4329, -1038)
+mass = 1e+16
+
+[node name="Mass122" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-4713, -286)
+mass = 1e+16
+
+[node name="Mass123" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(713, 4818)
+mass = 1e+16
+
+[node name="Mass124" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(313, 4818)
+mass = 1e+16
+
+[node name="Mass125" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(425, 4410)
+mass = 1e+16
+
+[node name="Mass126" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(1225, 4362)
+mass = 1e+16
+
+[node name="Mass127" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-599, 5218)
+mass = 1e+16
+
+[node name="Mass128" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(153, 4690)
+mass = 1e+16
+
+[node name="Mass129" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-247, 4690)
+mass = 1e+16
+
+[node name="Mass130" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-135, 4282)
+mass = 1e+16
+
+[node name="Mass131" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(665, 4234)
+mass = 1e+16
+
+[node name="Mass132" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-23, 5250)
+mass = 1e+16
+
+[node name="Mass133" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(833, 4954)
+mass = 1e+16
+
+[node name="Mass134" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(433, 4954)
+mass = 1e+16
+
+[node name="Mass135" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(545, 4546)
+mass = 1e+16
+
+[node name="Mass136" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(1345, 4498)
+mass = 1e+16
+
+[node name="Mass137" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-479, 5354)
+mass = 1e+16
+
+[node name="Mass138" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(433, 4714)
+mass = 1e+16
+
+[node name="Mass139" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-127, 4826)
+mass = 1e+16
+
+[node name="Mass140" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-15, 4418)
+mass = 1e+16
+
+[node name="Mass141" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(785, 4370)
+mass = 1e+16
+
+[node name="Mass142" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-5447, -1655)
+mass = 1e+16
+
+[node name="Mass143" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-4544, -2729)
+mass = 1e+16
+
+[node name="Mass144" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-4861, -2774)
+mass = 1e+16
+
+[node name="Mass145" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-4832, -3137)
+mass = 1e+16
+
+[node name="Mass146" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-4032, -3185)
+mass = 1e+16
+
+[node name="Mass147" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-5856, -2329)
+mass = 1e+16
+
+[node name="Mass148" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-5104, -2857)
+mass = 1e+16
+
+[node name="Mass149" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-5504, -2857)
+mass = 1e+16
+
+[node name="Mass150" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-5392, -3265)
+mass = 1e+16
+
+[node name="Mass151" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-4592, -3313)
+mass = 1e+16
+
+[node name="Mass152" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-5280, -2297)
+mass = 1e+16
+
+[node name="Mass153" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-4424, -2593)
+mass = 1e+16
+
+[node name="Mass154" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-4824, -2593)
+mass = 1e+16
+
+[node name="Mass155" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-4712, -3001)
+mass = 1e+16
+
+[node name="Mass156" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-3912, -3049)
+mass = 1e+16
+
+[node name="Mass157" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-5736, -2193)
+mass = 1e+16
+
+[node name="Mass158" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-4984, -2721)
+mass = 1e+16
+
+[node name="Mass159" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-5384, -2721)
+mass = 1e+16
+
+[node name="Mass160" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-5272, -3129)
+mass = 1e+16
+
+[node name="Mass161" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-4472, -3177)
+mass = 1e+16
+
+[node name="Mass162" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-4856, -2425)
+mass = 1e+16
+
+[node name="Mass163" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(2832, -2530)
+mass = 1e+16
+
+[node name="Mass164" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(3616, -3282)
+mass = 1e+16
+
+[node name="Mass165" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(3216, -3282)
+mass = 1e+16
+
+[node name="Mass166" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(3328, -3690)
+mass = 1e+16
+
+[node name="Mass167" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(4128, -3738)
+mass = 1e+16
+
+[node name="Mass168" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(2304, -2882)
+mass = 1e+16
+
+[node name="Mass169" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(3056, -3410)
+mass = 1e+16
+
+[node name="Mass170" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(2656, -3410)
+mass = 1e+16
+
+[node name="Mass171" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(2768, -3818)
+mass = 1e+16
+
+[node name="Mass172" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(3568, -3866)
+mass = 1e+16
+
+[node name="Mass173" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(2880, -2850)
+mass = 1e+16
+
+[node name="Mass174" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(3736, -3146)
+mass = 1e+16
+
+[node name="Mass175" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(3336, -3146)
+mass = 1e+16
+
+[node name="Mass176" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(3448, -3554)
+mass = 1e+16
+
+[node name="Mass177" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(4248, -3602)
+mass = 1e+16
+
+[node name="Mass178" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(2424, -2746)
+mass = 1e+16
+
+[node name="Mass179" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(3366, -3325)
+mass = 1e+16
+
+[node name="Mass180" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(2776, -3274)
+mass = 1e+16
+
+[node name="Mass181" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(2888, -3682)
+mass = 1e+16
+
+[node name="Mass182" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(3688, -3730)
+mass = 1e+16
+
+[node name="Mass183" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(3304, -2978)
+mass = 1e+16
+
+[node name="Mass184" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(453, 2319)
+mass = 1e+16
+
+[node name="Mass185" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(53, 2319)
+mass = 1e+16
+
+[node name="Mass186" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(165, 1911)
+mass = 1e+16
+
+[node name="Mass187" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(711, 1507)
+mass = 1e+16
+
+[node name="Mass188" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-859, 2719)
+mass = 1e+16
+
+[node name="Mass189" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-107, 2191)
+mass = 1e+16
+
+[node name="Mass190" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-507, 2191)
+mass = 1e+16
+
+[node name="Mass191" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-395, 1783)
+mass = 1e+16
+
+[node name="Mass192" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(405, 1735)
+mass = 1e+16
+
+[node name="Mass193" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-283, 2751)
+mass = 1e+16
+
+[node name="Mass194" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(573, 2455)
+mass = 1e+16
+
+[node name="Mass195" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(173, 2455)
+mass = 1e+16
+
+[node name="Mass196" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(285, 2047)
+mass = 1e+16
+
+[node name="Mass197" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(831, 1643)
+mass = 1e+16
+
+[node name="Mass198" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-993, 2499)
+mass = 1e+16
+
+[node name="Mass199" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(187, 2212)
+mass = 1e+16
+
+[node name="Mass200" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-387, 2327)
+mass = 1e+16
+
+[node name="Mass201" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-275, 1919)
+mass = 1e+16
+
+[node name="Mass202" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(525, 1871)
+mass = 1e+16
+
+[node name="Mass203" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(4130, 5167)
+mass = 1e+16
+
+[node name="Mass204" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(4914, 4415)
+mass = 1e+16
+
+[node name="Mass205" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(4612, 4324)
+mass = 1e+16
+
+[node name="Mass206" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(4626, 4007)
+mass = 1e+16
+
+[node name="Mass207" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(5426, 3959)
+mass = 1e+16
+
+[node name="Mass208" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(3602, 4815)
+mass = 1e+16
+
+[node name="Mass209" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(4354, 4287)
+mass = 1e+16
+
+[node name="Mass210" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(3954, 4287)
+mass = 1e+16
+
+[node name="Mass211" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(4066, 3879)
+mass = 1e+16
+
+[node name="Mass212" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(4866, 3831)
+mass = 1e+16
+
+[node name="Mass213" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(4178, 4847)
+mass = 1e+16
+
+[node name="Mass214" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(5034, 4551)
+mass = 1e+16
+
+[node name="Mass215" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(4634, 4551)
+mass = 1e+16
+
+[node name="Mass216" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(4746, 4143)
+mass = 1e+16
+
+[node name="Mass217" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(5546, 4095)
+mass = 1e+16
+
+[node name="Mass218" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(3722, 4951)
+mass = 1e+16
+
+[node name="Mass219" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(4474, 4423)
+mass = 1e+16
+
+[node name="Mass220" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(4074, 4423)
+mass = 1e+16
+
+[node name="Mass221" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(4186, 4015)
+mass = 1e+16
+
+[node name="Mass222" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(4986, 3967)
+mass = 1e+16
+
+[node name="Mass223" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(4602, 4719)
+mass = 1e+16
+
+[node name="Mass224" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-4923, 5162)
+mass = 1e+16
+
+[node name="Mass225" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-4139, 4410)
+mass = 1e+16
+
+[node name="Mass226" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-4539, 4410)
+mass = 1e+16
+
+[node name="Mass227" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-4427, 4002)
+mass = 1e+16
+
+[node name="Mass228" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-3627, 3954)
+mass = 1e+16
+
+[node name="Mass229" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-5451, 4810)
+mass = 1e+16
+
+[node name="Mass230" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-4699, 4282)
+mass = 1e+16
+
+[node name="Mass231" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-5099, 4282)
+mass = 1e+16
+
+[node name="Mass232" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-4987, 3874)
+mass = 1e+16
+
+[node name="Mass233" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-4187, 3826)
+mass = 1e+16
+
+[node name="Mass234" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-4875, 4842)
+mass = 1e+16
+
+[node name="Mass235" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-4019, 4546)
+mass = 1e+16
+
+[node name="Mass236" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-4419, 4546)
+mass = 1e+16
+
+[node name="Mass237" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-4307, 4138)
+mass = 1e+16
+
+[node name="Mass238" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-3507, 4090)
+mass = 1e+16
+
+[node name="Mass239" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-5331, 4946)
+mass = 1e+16
+
+[node name="Mass240" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-4403, 4386)
+mass = 1e+16
+
+[node name="Mass241" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-4979, 4418)
+mass = 1e+16
+
+[node name="Mass242" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-4867, 4010)
+mass = 1e+16
+
+[node name="Mass243" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-4067, 3962)
+mass = 1e+16
+
+[node name="Mass244" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-4451, 4714)
+mass = 1e+16
+
+[node name="Mass245" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(5236, -2743)
+mass = 1e+16
+
+[node name="Mass246" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(4836, -2743)
+mass = 1e+16
+
+[node name="Mass247" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(4948, -3151)
+mass = 1e+16
+
+[node name="Mass248" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(5562, -2402)
+mass = 1e+16
+
+[node name="Mass249" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(3924, -2343)
+mass = 1e+16
+
+[node name="Mass250" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(4676, -2871)
+mass = 1e+16
+
+[node name="Mass251" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-493, -522)
+mass = 1e+16
+
+[node name="Mass252" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-893, -522)
+mass = 1e+16
+
+[node name="Mass253" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-781, -930)
+mass = 1e+16
+
+[node name="Mass254" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(19, -978)
+mass = 1e+16
+
+[node name="Mass255" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-1805, -122)
+mass = 1e+16
+
+[node name="Mass256" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-1053, -650)
+mass = 1e+16
+
+[node name="Mass257" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-1453, -650)
+mass = 1e+16
+
+[node name="Mass258" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-1341, -1058)
+mass = 1e+16
+
+[node name="Mass259" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-541, -1106)
+mass = 1e+16
+
+[node name="Mass260" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-1229, -90)
+mass = 1e+16
+
+[node name="Mass261" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-373, -386)
+mass = 1e+16
+
+[node name="Mass262" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-773, -386)
+mass = 1e+16
+
+[node name="Mass263" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-661, -794)
+mass = 1e+16
+
+[node name="Mass264" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(139, -842)
+mass = 1e+16
+
+[node name="Mass265" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-1685, 14)
+mass = 1e+16
+
+[node name="Mass266" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-773, -626)
+mass = 1e+16
+
+[node name="Mass267" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-1333, -514)
+mass = 1e+16
+
+[node name="Mass268" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-1221, -922)
+mass = 1e+16
+
+[node name="Mass269" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-421, -970)
+mass = 1e+16
+
+[node name="Mass270" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(2789, 2349)
+mass = 1e+16
+
+[node name="Mass271" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(3573, 1597)
+mass = 1e+16
+
+[node name="Mass272" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(3256, 1552)
+mass = 1e+16
+
+[node name="Mass273" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(3285, 1189)
+mass = 1e+16
+
+[node name="Mass274" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(4085, 1141)
+mass = 1e+16
+
+[node name="Mass275" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(2261, 1997)
+mass = 1e+16
+
+[node name="Mass276" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(3013, 1469)
+mass = 1e+16
+
+[node name="Mass277" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(2613, 1469)
+mass = 1e+16
+
+[node name="Mass278" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(2725, 1061)
+mass = 1e+16
+
+[node name="Mass279" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(3525, 1013)
+mass = 1e+16
+
+[node name="Mass280" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(2837, 2029)
+mass = 1e+16
+
+[node name="Mass281" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(3693, 1733)
+mass = 1e+16
+
+[node name="Mass282" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(3293, 1733)
+mass = 1e+16
+
+[node name="Mass283" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(3405, 1325)
+mass = 1e+16
+
+[node name="Mass284" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(4205, 1277)
+mass = 1e+16
+
+[node name="Mass285" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(2381, 2133)
+mass = 1e+16
+
+[node name="Mass286" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(3133, 1605)
+mass = 1e+16
+
+[node name="Mass287" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(2733, 1605)
+mass = 1e+16
+
+[node name="Mass288" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(2845, 1197)
+mass = 1e+16
+
+[node name="Mass289" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(3645, 1149)
+mass = 1e+16
+
+[node name="Mass290" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(3261, 1901)
+mass = 1e+16
+
+[node name="Mass291" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-4981, 1786)
+mass = 1e+16
+
+[node name="Mass292" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-4197, 1034)
+mass = 1e+16
+
+[node name="Mass293" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-4597, 1034)
+mass = 1e+16
+
+[node name="Mass294" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-4485, 626)
+mass = 1e+16
+
+[node name="Mass295" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-3685, 578)
+mass = 1e+16
+
+[node name="Mass296" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-5509, 1434)
+mass = 1e+16
+
+[node name="Mass297" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-4757, 906)
+mass = 1e+16
+
+[node name="Mass298" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-5157, 906)
+mass = 1e+16
+
+[node name="Mass299" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-5045, 498)
+mass = 1e+16
+
+[node name="Mass300" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-4245, 450)
+mass = 1e+16
+
+[node name="Mass301" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-4933, 1466)
+mass = 1e+16
+
+[node name="Mass302" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-4077, 1170)
+mass = 1e+16
+
+[node name="Mass303" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-4477, 1170)
+mass = 1e+16
+
+[node name="Mass304" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-4365, 762)
+mass = 1e+16
+
+[node name="Mass305" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-3565, 714)
+mass = 1e+16
+
+[node name="Mass306" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-5389, 1570)
+mass = 1e+16
+
+[node name="Mass307" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-4447, 991)
+mass = 1e+16
+
+[node name="Mass308" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-5037, 1042)
+mass = 1e+16
+
+[node name="Mass309" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-4925, 634)
+mass = 1e+16
+
+[node name="Mass310" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-4125, 586)
+mass = 1e+16
+
+[node name="Mass311" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-4509, 1338)
+mass = 1e+16
+
+[node name="Mass312" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-1098, -3245)
+mass = 1e+16
+
+[node name="Mass313" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-1498, -3245)
+mass = 1e+16
+
+[node name="Mass314" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-1386, -3653)
+mass = 1e+16
+
+[node name="Mass315" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-586, -3701)
+mass = 1e+16
+
+[node name="Mass316" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-2410, -2845)
+mass = 1e+16
+
+[node name="Mass317" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-1658, -3373)
+mass = 1e+16
+
+[node name="Mass318" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-2058, -3373)
+mass = 1e+16
+
+[node name="Mass319" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-1946, -3781)
+mass = 1e+16
+
+[node name="Mass320" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-1146, -3829)
+mass = 1e+16
+
+[node name="Mass321" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-1834, -2813)
+mass = 1e+16
+
+[node name="Mass322" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-978, -3109)
+mass = 1e+16
+
+[node name="Mass323" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-1378, -3109)
+mass = 1e+16
+
+[node name="Mass324" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-1266, -3517)
+mass = 1e+16
+
+[node name="Mass325" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-466, -3565)
+mass = 1e+16
+
+[node name="Mass326" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-2290, -2709)
+mass = 1e+16
+
+[node name="Mass327" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-1364, -3352)
+mass = 1e+16
+
+[node name="Mass328" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-1938, -3237)
+mass = 1e+16
+
+[node name="Mass329" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-1826, -3645)
+mass = 1e+16
+
+[node name="Mass330" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-1026, -3693)
+mass = 1e+16
+
+[node name="Mass331" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(2184, -7)
+mass = 1e+16
+
+[node name="Mass332" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(2968, -759)
+mass = 1e+16
+
+[node name="Mass333" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(2666, -850)
+mass = 1e+16
+
+[node name="Mass334" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(2680, -1167)
+mass = 1e+16
+
+[node name="Mass335" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(3480, -1215)
+mass = 1e+16
+
+[node name="Mass336" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(1656, -359)
+mass = 1e+16
+
+[node name="Mass337" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(2408, -887)
+mass = 1e+16
+
+[node name="Mass338" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(2008, -887)
+mass = 1e+16
+
+[node name="Mass339" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(2120, -1295)
+mass = 1e+16
+
+[node name="Mass340" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(3106, -2140)
+mass = 1e+16
+
+[node name="Mass341" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(2232, -327)
+mass = 1e+16
+
+[node name="Mass342" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(3088, -623)
+mass = 1e+16
+
+[node name="Mass343" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(2688, -623)
+mass = 1e+16
+
+[node name="Mass344" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(2800, -1031)
+mass = 1e+16
+
+[node name="Mass345" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(3600, -1079)
+mass = 1e+16
+
+[node name="Mass346" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(1776, -223)
+mass = 1e+16
+
+[node name="Mass347" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(2528, -751)
+mass = 1e+16
+
+[node name="Mass348" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(2128, -751)
+mass = 1e+16
+
+[node name="Mass349" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(2240, -1159)
+mass = 1e+16
+
+[node name="Mass350" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(3040, -1207)
+mass = 1e+16
+
+[node name="Mass351" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(2656, -455)
+mass = 1e+16
+
+[node name="Mass352" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-6078, -360)
+mass = 1e+16
+
+[node name="Mass353" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-5294, -1112)
+mass = 1e+16
+
+[node name="Mass354" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-5694, -1112)
+mass = 1e+16
+
+[node name="Mass355" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-5582, -1520)
+mass = 1e+16
+
+[node name="Mass356" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-4782, -1568)
+mass = 1e+16
+
+[node name="Mass357" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-6606, -712)
+mass = 1e+16
+
+[node name="Mass358" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-5854, -1240)
+mass = 1e+16
+
+[node name="Mass359" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-6254, -1240)
+mass = 1e+16
+
+[node name="Mass360" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-6142, -1648)
+mass = 1e+16
+
+[node name="Mass361" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-5342, -1696)
+mass = 1e+16
+
+[node name="Mass362" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-6030, -680)
+mass = 1e+16
+
+[node name="Mass363" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-5174, -976)
+mass = 1e+16
+
+[node name="Mass364" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-5574, -976)
+mass = 1e+16
+
+[node name="Mass365" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-5462, -1384)
+mass = 1e+16
+
+[node name="Mass366" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-4662, -1432)
+mass = 1e+16
+
+[node name="Mass367" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-6486, -576)
+mass = 1e+16
+
+[node name="Mass368" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-5558, -1136)
+mass = 1e+16
+
+[node name="Mass369" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-6134, -1104)
+mass = 1e+16
+
+[node name="Mass370" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-6022, -1512)
+mass = 1e+16
+
+[node name="Mass371" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-5222, -1560)
+mass = 1e+16
+
+[node name="Mass372" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-5606, -808)
+mass = 1e+16
+
+[node name="Mass373" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-180, 4296)
+mass = 1e+16
+
+[node name="Mass374" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-580, 4296)
+mass = 1e+16
+
+[node name="Mass375" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-468, 3888)
+mass = 1e+16
+
+[node name="Mass376" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(332, 3840)
+mass = 1e+16
+
+[node name="Mass377" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-1492, 4696)
+mass = 1e+16
+
+[node name="Mass378" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-740, 4168)
+mass = 1e+16
+
+[node name="Mass379" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-1140, 4168)
+mass = 1e+16
+
+[node name="Mass380" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-1028, 3760)
+mass = 1e+16
+
+[node name="Mass381" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-228, 3712)
+mass = 1e+16
+
+[node name="Mass382" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-916, 4728)
+mass = 1e+16
+
+[node name="Mass383" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-60, 4432)
+mass = 1e+16
+
+[node name="Mass384" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-460, 4432)
+mass = 1e+16
+
+[node name="Mass385" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-348, 4024)
+mass = 1e+16
+
+[node name="Mass386" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(452, 3976)
+mass = 1e+16
+
+[node name="Mass387" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-1372, 4832)
+mass = 1e+16
+
+[node name="Mass388" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-460, 4192)
+mass = 1e+16
+
+[node name="Mass389" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-1020, 4304)
+mass = 1e+16
+
+[node name="Mass390" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-908, 3896)
+mass = 1e+16
+
+[node name="Mass391" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-108, 3848)
+mass = 1e+16
+
+[node name="Mass392" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-6221, -2499)
+mass = 1e+16
+
+[node name="Mass393" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-5437, -3251)
+mass = 1e+16
+
+[node name="Mass394" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-5754, -3296)
+mass = 1e+16
+
+[node name="Mass395" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-5725, -3659)
+mass = 1e+16
+
+[node name="Mass396" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-4925, -3707)
+mass = 1e+16
+
+[node name="Mass397" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-6749, -2851)
+mass = 1e+16
+
+[node name="Mass398" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-5997, -3379)
+mass = 1e+16
+
+[node name="Mass399" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-6397, -3379)
+mass = 1e+16
+
+[node name="Mass400" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-6285, -3787)
+mass = 1e+16
+
+[node name="Mass401" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-5485, -3835)
+mass = 1e+16
+
+[node name="Mass402" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-6173, -2819)
+mass = 1e+16
+
+[node name="Mass403" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-5317, -3115)
+mass = 1e+16
+
+[node name="Mass404" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-5717, -3115)
+mass = 1e+16
+
+[node name="Mass405" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-5605, -3523)
+mass = 1e+16
+
+[node name="Mass406" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-4805, -3571)
+mass = 1e+16
+
+[node name="Mass407" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-6629, -2715)
+mass = 1e+16
+
+[node name="Mass408" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-5877, -3243)
+mass = 1e+16
+
+[node name="Mass409" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-6277, -3243)
+mass = 1e+16
+
+[node name="Mass410" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-6165, -3651)
+mass = 1e+16
+
+[node name="Mass411" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-5365, -3699)
+mass = 1e+16
+
+[node name="Mass412" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-5749, -2947)
+mass = 1e+16
+
+[node name="Mass413" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(1939, -3052)
+mass = 1e+16
+
+[node name="Mass414" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(2723, -3804)
+mass = 1e+16
+
+[node name="Mass415" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(2323, -3804)
+mass = 1e+16
+
+[node name="Mass416" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(2435, -4212)
+mass = 1e+16
+
+[node name="Mass417" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(3235, -4260)
+mass = 1e+16
+
+[node name="Mass418" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(1225, -2607)
+mass = 1e+16
+
+[node name="Mass419" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(2163, -3932)
+mass = 1e+16
+
+[node name="Mass420" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(1763, -3932)
+mass = 1e+16
+
+[node name="Mass421" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(1875, -4340)
+mass = 1e+16
+
+[node name="Mass422" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(2675, -4388)
+mass = 1e+16
+
+[node name="Mass423" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(1987, -3372)
+mass = 1e+16
+
+[node name="Mass424" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(2843, -3668)
+mass = 1e+16
+
+[node name="Mass425" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(2443, -3668)
+mass = 1e+16
+
+[node name="Mass426" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(2555, -4076)
+mass = 1e+16
+
+[node name="Mass427" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(3355, -4124)
+mass = 1e+16
+
+[node name="Mass428" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(1531, -3268)
+mass = 1e+16
+
+[node name="Mass429" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(2473, -3847)
+mass = 1e+16
+
+[node name="Mass430" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(1883, -3796)
+mass = 1e+16
+
+[node name="Mass431" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(1995, -4204)
+mass = 1e+16
+
+[node name="Mass432" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(2795, -4252)
+mass = 1e+16
+
+[node name="Mass433" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(2411, -3500)
+mass = 1e+16
+
+[node name="Mass434" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-440, 1797)
+mass = 1e+16
+
+[node name="Mass435" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-840, 1797)
+mass = 1e+16
+
+[node name="Mass436" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-728, 1389)
+mass = 1e+16
+
+[node name="Mass437" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(72, 1341)
+mass = 1e+16
+
+[node name="Mass438" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-2006, 1841)
+mass = 1e+16
+
+[node name="Mass439" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-1000, 1669)
+mass = 1e+16
+
+[node name="Mass440" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-1400, 1669)
+mass = 1e+16
+
+[node name="Mass441" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-1288, 1261)
+mass = 1e+16
+
+[node name="Mass442" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-488, 1213)
+mass = 1e+16
+
+[node name="Mass443" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-1176, 2229)
+mass = 1e+16
+
+[node name="Mass444" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-320, 1933)
+mass = 1e+16
+
+[node name="Mass445" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-720, 1933)
+mass = 1e+16
+
+[node name="Mass446" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-608, 1525)
+mass = 1e+16
+
+[node name="Mass447" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(192, 1477)
+mass = 1e+16
+
+[node name="Mass448" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-1886, 1977)
+mass = 1e+16
+
+[node name="Mass449" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-706, 1690)
+mass = 1e+16
+
+[node name="Mass450" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-1280, 1805)
+mass = 1e+16
+
+[node name="Mass451" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-1168, 1397)
+mass = 1e+16
+
+[node name="Mass452" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-368, 1349)
+mass = 1e+16
+
+[node name="Mass453" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(3237, 4645)
+mass = 1e+16
+
+[node name="Mass454" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(4021, 3893)
+mass = 1e+16
+
+[node name="Mass455" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(3719, 3802)
+mass = 1e+16
+
+[node name="Mass456" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(3733, 3485)
+mass = 1e+16
+
+[node name="Mass457" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(4533, 3437)
+mass = 1e+16
+
+[node name="Mass458" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(2709, 4293)
+mass = 1e+16
+
+[node name="Mass459" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(3461, 3765)
+mass = 1e+16
+
+[node name="Mass460" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(3061, 3765)
+mass = 1e+16
+
+[node name="Mass461" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(3173, 3357)
+mass = 1e+16
+
+[node name="Mass462" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(3973, 3309)
+mass = 1e+16
+
+[node name="Mass463" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(3285, 4325)
+mass = 1e+16
+
+[node name="Mass464" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(4141, 4029)
+mass = 1e+16
+
+[node name="Mass465" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(3741, 4029)
+mass = 1e+16
+
+[node name="Mass466" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(3853, 3621)
+mass = 1e+16
+
+[node name="Mass467" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(4653, 3573)
+mass = 1e+16
+
+[node name="Mass468" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(2829, 4429)
+mass = 1e+16
+
+[node name="Mass469" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(3581, 3901)
+mass = 1e+16
+
+[node name="Mass470" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(3181, 3901)
+mass = 1e+16
+
+[node name="Mass471" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(3293, 3493)
+mass = 1e+16
+
+[node name="Mass472" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(4093, 3445)
+mass = 1e+16
+
+[node name="Mass473" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(3709, 4197)
+mass = 1e+16
+
+[node name="Mass474" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-5816, 4640)
+mass = 1e+16
+
+[node name="Mass475" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-5032, 3888)
+mass = 1e+16
+
+[node name="Mass476" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-5432, 3888)
+mass = 1e+16
+
+[node name="Mass477" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-5320, 3480)
+mass = 1e+16
+
+[node name="Mass478" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-4520, 3432)
+mass = 1e+16
+
+[node name="Mass479" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-6344, 4288)
+mass = 1e+16
+
+[node name="Mass480" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-5592, 3760)
+mass = 1e+16
+
+[node name="Mass481" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-5992, 3760)
+mass = 1e+16
+
+[node name="Mass482" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-5880, 3352)
+mass = 1e+16
+
+[node name="Mass483" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-5080, 3304)
+mass = 1e+16
+
+[node name="Mass484" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-5768, 4320)
+mass = 1e+16
+
+[node name="Mass485" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-4912, 4024)
+mass = 1e+16
+
+[node name="Mass486" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-5312, 4024)
+mass = 1e+16
+
+[node name="Mass487" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-5200, 3616)
+mass = 1e+16
+
+[node name="Mass488" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-4400, 3568)
+mass = 1e+16
+
+[node name="Mass489" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-6224, 4424)
+mass = 1e+16
+
+[node name="Mass490" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-5296, 3864)
+mass = 1e+16
+
+[node name="Mass491" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-5872, 3896)
+mass = 1e+16
+
+[node name="Mass492" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-5760, 3488)
+mass = 1e+16
+
+[node name="Mass493" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-4960, 3440)
+mass = 1e+16
+
+[node name="Mass494" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(-5344, 4192)
+mass = 1e+16
+
+[node name="Mass495" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(4343, -3265)
+mass = 1e+16
+
+[node name="Mass496" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(3943, -3265)
+mass = 1e+16
+
+[node name="Mass497" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(4055, -3673)
+mass = 1e+16
+
+[node name="Mass498" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(4855, -3721)
+mass = 1e+16
+
+[node name="Mass499" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(3031, -2865)
+mass = 1e+16
+
+[node name="Mass500" parent="Space" instance=ExtResource("1_4kpoy")]
+position = Vector2(3783, -3393)
+mass = 1e+16
+
+[node name="LargeMass" parent="Space" instance=ExtResource("1_4kpoy")]
 mass = 1e+18

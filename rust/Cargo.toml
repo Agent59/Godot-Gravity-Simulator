@@ -8,3 +8,9 @@ crate-type = ["cdylib"] # Compiles this crate to a dynamic C library
 
 [dependencies]
 godot = { git = "https://github.com/godot-rust/gdext", branch = "master" }
+
+[features]
+direct = []
+barnes_hut = []
+barnes_hut_parallel_force_calc = ["barnes_hut"]
+fmm = []

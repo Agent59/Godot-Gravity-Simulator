@@ -1,0 +1,3061 @@
+[gd_scene load_steps=2 format=3 uid="uid://cf83g0yjb6q34"]
+
+[ext_resource type="PackedScene" uid="uid://c5tsgjo0h0ycn" path="res://mass.tscn" id="1_u2ifx"]
+
+[node name="SomeLargeManySmallMasses" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(0.08, 0.08)
+
+[node name="Space" type="Space" parent="."]
+
+[node name="LargeMass1" parent="Space" instance=ExtResource("1_u2ifx")]
+mass = 1e+18
+
+[node name="LargeMass2" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(5000, 0)
+mass = 1e+18
+
+[node name="LargeMass3" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-5000, 0)
+mass = 1e+18
+
+[node name="LargeMass4" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(0, 2500)
+mass = 1e+18
+
+[node name="LargeMass5" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(0, -2500)
+mass = 1e+18
+
+[node name="SmallMass1" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(1000, 1000)
+
+[node name="SmallMass2" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(4422, 924)
+
+[node name="SmallMass3" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(1628, 2179)
+
+[node name="SmallMass4" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(3539, 2085)
+
+[node name="SmallMass5" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(4508, 2516)
+
+[node name="SmallMass6" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(3055, 780)
+
+[node name="SmallMass7" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(2127, 1426)
+
+[node name="SmallMass8" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(2531, 2327)
+
+[node name="SmallMass9" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(674, 1991)
+
+[node name="SmallMass10" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(2046, 605)
+
+[node name="SmallMass11" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(3055, 1533)
+
+[node name="SmallMass12" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(1010, 2677)
+
+[node name="SmallMass13" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(4468, 1735)
+
+[node name="SmallMass14" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(3540, 457)
+
+[node name="SmallMass15" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(3769, 1332)
+
+[node name="SmallMass16" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(3190, 2731)
+
+[node name="SmallMass17" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-4853, 919)
+
+[node name="SmallMass18" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-1431, 843)
+
+[node name="SmallMass19" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-4225, 2098)
+
+[node name="SmallMass20" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-2314, 2004)
+
+[node name="SmallMass21" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-1345, 2435)
+
+[node name="SmallMass22" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-2798, 699)
+
+[node name="SmallMass23" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-3726, 1345)
+
+[node name="SmallMass24" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-3322, 2246)
+
+[node name="SmallMass25" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-5179, 1910)
+
+[node name="SmallMass26" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-3807, 524)
+
+[node name="SmallMass27" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-2798, 1452)
+
+[node name="SmallMass28" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-4843, 2596)
+
+[node name="SmallMass29" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-1385, 1654)
+
+[node name="SmallMass30" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-2313, 376)
+
+[node name="SmallMass31" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-2084, 1251)
+
+[node name="SmallMass32" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-2663, 2650)
+
+[node name="SmallMass33" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(1228, -2178)
+
+[node name="SmallMass34" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(4650, -2254)
+
+[node name="SmallMass35" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(1856, -999)
+
+[node name="SmallMass36" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(3767, -1093)
+
+[node name="SmallMass37" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(4736, -662)
+
+[node name="SmallMass38" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(3283, -2398)
+
+[node name="SmallMass39" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(2355, -1752)
+
+[node name="SmallMass40" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(2759, -851)
+
+[node name="SmallMass41" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(902, -1187)
+
+[node name="SmallMass42" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(2274, -2573)
+
+[node name="SmallMass43" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(3283, -1645)
+
+[node name="SmallMass44" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(1238, -501)
+
+[node name="SmallMass45" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(4696, -1443)
+
+[node name="SmallMass46" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(3768, -2721)
+
+[node name="SmallMass47" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(3997, -1846)
+
+[node name="SmallMass48" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(3418, -447)
+
+[node name="SmallMass49" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-4625, -2259)
+
+[node name="SmallMass50" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-1203, -2335)
+
+[node name="SmallMass51" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-3997, -1080)
+
+[node name="SmallMass52" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-2086, -1174)
+
+[node name="SmallMass53" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-1117, -743)
+
+[node name="SmallMass54" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-2570, -2479)
+
+[node name="SmallMass55" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-3498, -1833)
+
+[node name="SmallMass56" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-3094, -932)
+
+[node name="SmallMass57" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-4951, -1268)
+
+[node name="SmallMass58" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-3579, -2654)
+
+[node name="SmallMass59" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-2570, -1726)
+
+[node name="SmallMass60" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-4615, -582)
+
+[node name="SmallMass61" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-1157, -1524)
+
+[node name="SmallMass62" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-2085, -2802)
+
+[node name="SmallMass63" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-1856, -1927)
+
+[node name="SmallMass64" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-2435, -528)
+
+[node name="SmallMass65" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(12660, 1114)
+
+[node name="SmallMass66" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(16082, 1038)
+
+[node name="SmallMass67" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(13288, 2293)
+
+[node name="SmallMass68" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(15199, 2199)
+
+[node name="SmallMass69" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(16168, 2630)
+
+[node name="SmallMass70" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(14715, 894)
+
+[node name="SmallMass71" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(13787, 1540)
+
+[node name="SmallMass72" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(14191, 2441)
+
+[node name="SmallMass73" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(12334, 2105)
+
+[node name="SmallMass74" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(13706, 719)
+
+[node name="SmallMass75" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(14715, 1647)
+
+[node name="SmallMass76" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(12670, 2791)
+
+[node name="SmallMass77" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(16128, 1849)
+
+[node name="SmallMass78" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(15200, 571)
+
+[node name="SmallMass79" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(15429, 1446)
+
+[node name="SmallMass80" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(14850, 2845)
+
+[node name="SmallMass81" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(6807, 1033)
+
+[node name="SmallMass82" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(10229, 957)
+
+[node name="SmallMass83" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(7435, 2212)
+
+[node name="SmallMass84" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(9346, 2118)
+
+[node name="SmallMass85" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(10315, 2549)
+
+[node name="SmallMass86" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(8862, 813)
+
+[node name="SmallMass87" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(7934, 1459)
+
+[node name="SmallMass88" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(8338, 2360)
+
+[node name="SmallMass89" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(6481, 2024)
+
+[node name="SmallMass90" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(7853, 638)
+
+[node name="SmallMass91" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(8862, 1566)
+
+[node name="SmallMass92" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(6817, 2710)
+
+[node name="SmallMass93" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(10275, 1768)
+
+[node name="SmallMass94" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(9347, 490)
+
+[node name="SmallMass95" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(9576, 1365)
+
+[node name="SmallMass96" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(8997, 2764)
+
+[node name="SmallMass97" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(12888, -2064)
+
+[node name="SmallMass98" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(16310, -2140)
+
+[node name="SmallMass99" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(13516, -885)
+
+[node name="SmallMass100" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(15427, -979)
+
+[node name="SmallMass101" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(16396, -548)
+
+[node name="SmallMass102" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(14943, -2284)
+
+[node name="SmallMass103" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(14015, -1638)
+
+[node name="SmallMass104" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(14419, -737)
+
+[node name="SmallMass105" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(12562, -1073)
+
+[node name="SmallMass106" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(13934, -2459)
+
+[node name="SmallMass107" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(14943, -1531)
+
+[node name="SmallMass108" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(12898, -387)
+
+[node name="SmallMass109" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(16356, -1329)
+
+[node name="SmallMass110" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(15428, -2607)
+
+[node name="SmallMass111" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(15657, -1732)
+
+[node name="SmallMass112" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(15078, -333)
+
+[node name="SmallMass113" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(7035, -2145)
+
+[node name="SmallMass114" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(10457, -2221)
+
+[node name="SmallMass115" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(7663, -966)
+
+[node name="SmallMass116" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(9574, -1060)
+
+[node name="SmallMass117" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(10543, -629)
+
+[node name="SmallMass118" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(9090, -2365)
+
+[node name="SmallMass119" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(8162, -1719)
+
+[node name="SmallMass120" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(8566, -818)
+
+[node name="SmallMass121" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(6709, -1154)
+
+[node name="SmallMass122" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(8081, -2540)
+
+[node name="SmallMass123" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(9090, -1612)
+
+[node name="SmallMass124" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(7045, -468)
+
+[node name="SmallMass125" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(10503, -1410)
+
+[node name="SmallMass126" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(9575, -2688)
+
+[node name="SmallMass127" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(9804, -1813)
+
+[node name="SmallMass128" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(9225, -414)
+
+[node name="SmallMass129" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(914, -5643)
+
+[node name="SmallMass130" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(4336, -5719)
+
+[node name="SmallMass131" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(1542, -4464)
+
+[node name="SmallMass132" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(3453, -4558)
+
+[node name="SmallMass133" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(4422, -4127)
+
+[node name="SmallMass134" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(2969, -5863)
+
+[node name="SmallMass135" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(2041, -5217)
+
+[node name="SmallMass136" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(2445, -4316)
+
+[node name="SmallMass137" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(588, -4652)
+
+[node name="SmallMass138" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(1960, -6038)
+
+[node name="SmallMass139" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(2969, -5110)
+
+[node name="SmallMass140" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(924, -3966)
+
+[node name="SmallMass141" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(4382, -4908)
+
+[node name="SmallMass142" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(3454, -6186)
+
+[node name="SmallMass143" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(3683, -5311)
+
+[node name="SmallMass144" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(3104, -3912)
+
+[node name="SmallMass145" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-4939, -5724)
+
+[node name="SmallMass146" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-1517, -5800)
+
+[node name="SmallMass147" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-4311, -4545)
+
+[node name="SmallMass148" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-2400, -4639)
+
+[node name="SmallMass149" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-1431, -4208)
+
+[node name="SmallMass150" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-2884, -5944)
+
+[node name="SmallMass151" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-3812, -5298)
+
+[node name="SmallMass152" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-3408, -4397)
+
+[node name="SmallMass153" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-5265, -4733)
+
+[node name="SmallMass154" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-3893, -6119)
+
+[node name="SmallMass155" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-2884, -5191)
+
+[node name="SmallMass156" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-4929, -4047)
+
+[node name="SmallMass157" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-1471, -4989)
+
+[node name="SmallMass158" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-2399, -6267)
+
+[node name="SmallMass159" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-2170, -5392)
+
+[node name="SmallMass160" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-2749, -3993)
+
+[node name="SmallMass161" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(1142, -8821)
+
+[node name="SmallMass162" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(4564, -8897)
+
+[node name="SmallMass163" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(1770, -7642)
+
+[node name="SmallMass164" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(3681, -7736)
+
+[node name="SmallMass165" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(4650, -7305)
+
+[node name="SmallMass166" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(3197, -9041)
+
+[node name="SmallMass167" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(2269, -8395)
+
+[node name="SmallMass168" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(2673, -7494)
+
+[node name="SmallMass169" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(816, -7830)
+
+[node name="SmallMass170" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(2188, -9216)
+
+[node name="SmallMass171" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(3197, -8288)
+
+[node name="SmallMass172" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(1152, -7144)
+
+[node name="SmallMass173" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(4610, -8086)
+
+[node name="SmallMass174" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(3682, -9364)
+
+[node name="SmallMass175" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(3911, -8489)
+
+[node name="SmallMass176" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(3332, -7090)
+
+[node name="SmallMass177" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-4711, -8902)
+
+[node name="SmallMass178" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-1289, -8978)
+
+[node name="SmallMass179" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-4083, -7723)
+
+[node name="SmallMass180" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-2172, -7817)
+
+[node name="SmallMass181" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-1203, -7386)
+
+[node name="SmallMass182" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-2656, -9122)
+
+[node name="SmallMass183" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-3584, -8476)
+
+[node name="SmallMass184" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-3180, -7575)
+
+[node name="SmallMass185" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-5037, -7911)
+
+[node name="SmallMass186" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-3665, -9297)
+
+[node name="SmallMass187" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-2656, -8369)
+
+[node name="SmallMass188" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-4701, -7225)
+
+[node name="SmallMass189" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-1243, -8167)
+
+[node name="SmallMass190" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-2171, -9445)
+
+[node name="SmallMass191" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-1942, -8570)
+
+[node name="SmallMass192" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-2521, -7171)
+
+[node name="SmallMass193" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(12574, -5529)
+
+[node name="SmallMass194" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(15996, -5605)
+
+[node name="SmallMass195" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(13202, -4350)
+
+[node name="SmallMass196" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(15113, -4444)
+
+[node name="SmallMass197" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(16082, -4013)
+
+[node name="SmallMass198" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(14629, -5749)
+
+[node name="SmallMass199" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(13701, -5103)
+
+[node name="SmallMass200" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(14105, -4202)
+
+[node name="SmallMass201" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(12248, -4538)
+
+[node name="SmallMass202" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(13620, -5924)
+
+[node name="SmallMass203" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(14629, -4996)
+
+[node name="SmallMass204" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(12584, -3852)
+
+[node name="SmallMass205" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(16042, -4794)
+
+[node name="SmallMass206" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(15114, -6072)
+
+[node name="SmallMass207" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(15343, -5197)
+
+[node name="SmallMass208" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(14764, -3798)
+
+[node name="SmallMass209" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(6721, -5610)
+
+[node name="SmallMass210" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(10143, -5686)
+
+[node name="SmallMass211" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(7349, -4431)
+
+[node name="SmallMass212" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(9260, -4525)
+
+[node name="SmallMass213" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(10229, -4094)
+
+[node name="SmallMass214" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(8776, -5830)
+
+[node name="SmallMass215" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(7848, -5184)
+
+[node name="SmallMass216" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(8252, -4283)
+
+[node name="SmallMass217" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(6395, -4619)
+
+[node name="SmallMass218" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(7767, -6005)
+
+[node name="SmallMass219" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(8776, -5077)
+
+[node name="SmallMass220" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(6731, -3933)
+
+[node name="SmallMass221" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(10189, -4875)
+
+[node name="SmallMass222" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(9261, -6153)
+
+[node name="SmallMass223" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(9490, -5278)
+
+[node name="SmallMass224" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(8911, -3879)
+
+[node name="SmallMass225" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(12802, -8707)
+
+[node name="SmallMass226" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(16224, -8783)
+
+[node name="SmallMass227" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(13430, -7528)
+
+[node name="SmallMass228" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(15341, -7622)
+
+[node name="SmallMass229" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(16310, -7191)
+
+[node name="SmallMass230" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(14857, -8927)
+
+[node name="SmallMass231" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(13929, -8281)
+
+[node name="SmallMass232" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(14333, -7380)
+
+[node name="SmallMass233" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(12476, -7716)
+
+[node name="SmallMass234" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(13848, -9102)
+
+[node name="SmallMass235" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(14857, -8174)
+
+[node name="SmallMass236" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(12812, -7030)
+
+[node name="SmallMass237" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(16270, -7972)
+
+[node name="SmallMass238" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(15342, -9250)
+
+[node name="SmallMass239" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(15571, -8375)
+
+[node name="SmallMass240" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(14992, -6976)
+
+[node name="SmallMass241" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(6949, -8788)
+
+[node name="SmallMass242" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(10371, -8864)
+
+[node name="SmallMass243" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(7577, -7609)
+
+[node name="SmallMass244" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(9488, -7703)
+
+[node name="SmallMass245" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(10457, -7272)
+
+[node name="SmallMass246" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(9004, -9008)
+
+[node name="SmallMass247" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(8076, -8362)
+
+[node name="SmallMass248" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(8480, -7461)
+
+[node name="SmallMass249" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(6623, -7797)
+
+[node name="SmallMass250" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(7995, -9183)
+
+[node name="SmallMass251" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(9004, -8255)
+
+[node name="SmallMass252" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(6959, -7111)
+
+[node name="SmallMass253" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(10417, -8053)
+
+[node name="SmallMass254" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(9489, -9331)
+
+[node name="SmallMass255" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(9718, -8456)
+
+[node name="SmallMass256" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(9139, -7057)
+
+[node name="SmallMass257" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(743, 7513)
+
+[node name="SmallMass258" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(4165, 7437)
+
+[node name="SmallMass259" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(1371, 8692)
+
+[node name="SmallMass260" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(3282, 8598)
+
+[node name="SmallMass261" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(4251, 9029)
+
+[node name="SmallMass262" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(2798, 7293)
+
+[node name="SmallMass263" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(1870, 7939)
+
+[node name="SmallMass264" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(2274, 8840)
+
+[node name="SmallMass265" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(417, 8504)
+
+[node name="SmallMass266" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(1789, 7118)
+
+[node name="SmallMass267" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(2798, 8046)
+
+[node name="SmallMass268" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(753, 9190)
+
+[node name="SmallMass269" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(4211, 8248)
+
+[node name="SmallMass270" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(3283, 6970)
+
+[node name="SmallMass271" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(3512, 7845)
+
+[node name="SmallMass272" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(2933, 9244)
+
+[node name="SmallMass273" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-5110, 7432)
+
+[node name="SmallMass274" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-1688, 7356)
+
+[node name="SmallMass275" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-4482, 8611)
+
+[node name="SmallMass276" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-2571, 8517)
+
+[node name="SmallMass277" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-1602, 8948)
+
+[node name="SmallMass278" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-3055, 7212)
+
+[node name="SmallMass279" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-3983, 7858)
+
+[node name="SmallMass280" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-3579, 8759)
+
+[node name="SmallMass281" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-5436, 8423)
+
+[node name="SmallMass282" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-4064, 7037)
+
+[node name="SmallMass283" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-3055, 7965)
+
+[node name="SmallMass284" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-5100, 9109)
+
+[node name="SmallMass285" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-1642, 8167)
+
+[node name="SmallMass286" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-2570, 6889)
+
+[node name="SmallMass287" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-2341, 7764)
+
+[node name="SmallMass288" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-2920, 9163)
+
+[node name="SmallMass289" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(971, 4335)
+
+[node name="SmallMass290" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(4393, 4259)
+
+[node name="SmallMass291" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(1599, 5514)
+
+[node name="SmallMass292" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(3510, 5420)
+
+[node name="SmallMass293" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(4479, 5851)
+
+[node name="SmallMass294" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(3026, 4115)
+
+[node name="SmallMass295" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(2098, 4761)
+
+[node name="SmallMass296" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(2502, 5662)
+
+[node name="SmallMass297" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(645, 5326)
+
+[node name="SmallMass298" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(2017, 3940)
+
+[node name="SmallMass299" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(3026, 4868)
+
+[node name="SmallMass300" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(981, 6012)
+
+[node name="SmallMass301" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(4439, 5070)
+
+[node name="SmallMass302" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(3511, 3792)
+
+[node name="SmallMass303" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(3740, 4667)
+
+[node name="SmallMass304" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(3161, 6066)
+
+[node name="SmallMass305" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-4882, 4254)
+
+[node name="SmallMass306" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-1460, 4178)
+
+[node name="SmallMass307" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-4254, 5433)
+
+[node name="SmallMass308" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-2343, 5339)
+
+[node name="SmallMass309" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-1374, 5770)
+
+[node name="SmallMass310" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-2827, 4034)
+
+[node name="SmallMass311" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-3755, 4680)
+
+[node name="SmallMass312" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-3351, 5581)
+
+[node name="SmallMass313" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-5208, 5245)
+
+[node name="SmallMass314" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-3836, 3859)
+
+[node name="SmallMass315" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-2827, 4787)
+
+[node name="SmallMass316" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-4872, 5931)
+
+[node name="SmallMass317" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-1414, 4989)
+
+[node name="SmallMass318" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-2342, 3711)
+
+[node name="SmallMass319" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-2113, 4586)
+
+[node name="SmallMass320" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-2692, 5985)
+
+[node name="SmallMass321" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(12403, 7627)
+
+[node name="SmallMass322" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(15825, 7551)
+
+[node name="SmallMass323" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(13031, 8806)
+
+[node name="SmallMass324" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(14942, 8712)
+
+[node name="SmallMass325" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(15911, 9143)
+
+[node name="SmallMass326" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(14458, 7407)
+
+[node name="SmallMass327" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(13530, 8053)
+
+[node name="SmallMass328" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(13934, 8954)
+
+[node name="SmallMass329" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(12077, 8618)
+
+[node name="SmallMass330" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(13449, 7232)
+
+[node name="SmallMass331" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(14458, 8160)
+
+[node name="SmallMass332" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(12413, 9304)
+
+[node name="SmallMass333" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(15871, 8362)
+
+[node name="SmallMass334" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(14943, 7084)
+
+[node name="SmallMass335" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(15172, 7959)
+
+[node name="SmallMass336" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(14593, 9358)
+
+[node name="SmallMass337" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(6550, 7546)
+
+[node name="SmallMass338" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(9972, 7470)
+
+[node name="SmallMass339" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(7178, 8725)
+
+[node name="SmallMass340" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(9089, 8631)
+
+[node name="SmallMass341" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(10058, 9062)
+
+[node name="SmallMass342" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(8605, 7326)
+
+[node name="SmallMass343" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(7677, 7972)
+
+[node name="SmallMass344" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(8081, 8873)
+
+[node name="SmallMass345" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(6224, 8537)
+
+[node name="SmallMass346" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(7596, 7151)
+
+[node name="SmallMass347" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(8605, 8079)
+
+[node name="SmallMass348" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(6560, 9223)
+
+[node name="SmallMass349" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(10018, 8281)
+
+[node name="SmallMass350" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(9090, 7003)
+
+[node name="SmallMass351" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(9319, 7878)
+
+[node name="SmallMass352" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(8740, 9277)
+
+[node name="SmallMass353" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(12631, 4449)
+
+[node name="SmallMass354" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(16053, 4373)
+
+[node name="SmallMass355" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(13259, 5628)
+
+[node name="SmallMass356" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(15170, 5534)
+
+[node name="SmallMass357" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(16139, 5965)
+
+[node name="SmallMass358" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(14686, 4229)
+
+[node name="SmallMass359" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(13758, 4875)
+
+[node name="SmallMass360" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(14162, 5776)
+
+[node name="SmallMass361" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(12305, 5440)
+
+[node name="SmallMass362" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(13677, 4054)
+
+[node name="SmallMass363" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(14686, 4982)
+
+[node name="SmallMass364" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(12641, 6126)
+
+[node name="SmallMass365" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(16099, 5184)
+
+[node name="SmallMass366" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(15171, 3906)
+
+[node name="SmallMass367" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(15400, 4781)
+
+[node name="SmallMass368" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(14821, 6180)
+
+[node name="SmallMass369" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(6778, 4368)
+
+[node name="SmallMass370" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(10200, 4292)
+
+[node name="SmallMass371" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(7406, 5547)
+
+[node name="SmallMass372" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(9317, 5453)
+
+[node name="SmallMass373" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(10286, 5884)
+
+[node name="SmallMass374" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(8833, 4148)
+
+[node name="SmallMass375" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(7905, 4794)
+
+[node name="SmallMass376" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(8309, 5695)
+
+[node name="SmallMass377" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(6452, 5359)
+
+[node name="SmallMass378" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(7824, 3973)
+
+[node name="SmallMass379" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(8833, 4901)
+
+[node name="SmallMass380" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(6788, 6045)
+
+[node name="SmallMass381" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(10246, 5103)
+
+[node name="SmallMass382" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(9318, 3825)
+
+[node name="SmallMass383" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(9547, 4700)
+
+[node name="SmallMass384" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(8968, 6099)
+
+[node name="SmallMass385" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-10363, 1328)
+
+[node name="SmallMass386" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-6941, 1252)
+
+[node name="SmallMass387" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-9735, 2507)
+
+[node name="SmallMass388" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-7824, 2413)
+
+[node name="SmallMass389" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-6855, 2844)
+
+[node name="SmallMass390" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-8308, 1108)
+
+[node name="SmallMass391" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-9236, 1754)
+
+[node name="SmallMass392" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-8832, 2655)
+
+[node name="SmallMass393" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-10689, 2319)
+
+[node name="SmallMass394" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-9317, 933)
+
+[node name="SmallMass395" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-8308, 1861)
+
+[node name="SmallMass396" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-10353, 3005)
+
+[node name="SmallMass397" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-6895, 2063)
+
+[node name="SmallMass398" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-7823, 785)
+
+[node name="SmallMass399" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-7594, 1660)
+
+[node name="SmallMass400" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-8173, 3059)
+
+[node name="SmallMass401" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-16216, 1247)
+
+[node name="SmallMass402" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-12794, 1171)
+
+[node name="SmallMass403" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-15588, 2426)
+
+[node name="SmallMass404" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-13677, 2332)
+
+[node name="SmallMass405" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-12708, 2763)
+
+[node name="SmallMass406" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-14161, 1027)
+
+[node name="SmallMass407" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-15089, 1673)
+
+[node name="SmallMass408" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-14685, 2574)
+
+[node name="SmallMass409" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-16542, 2238)
+
+[node name="SmallMass410" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-15170, 852)
+
+[node name="SmallMass411" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-14161, 1780)
+
+[node name="SmallMass412" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-16206, 2924)
+
+[node name="SmallMass413" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-12748, 1982)
+
+[node name="SmallMass414" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-13676, 704)
+
+[node name="SmallMass415" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-13447, 1579)
+
+[node name="SmallMass416" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-14026, 2978)
+
+[node name="SmallMass417" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-10135, -1850)
+
+[node name="SmallMass418" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-6713, -1926)
+
+[node name="SmallMass419" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-9507, -671)
+
+[node name="SmallMass420" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-7596, -765)
+
+[node name="SmallMass421" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-6627, -334)
+
+[node name="SmallMass422" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-8080, -2070)
+
+[node name="SmallMass423" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-9008, -1424)
+
+[node name="SmallMass424" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-8604, -523)
+
+[node name="SmallMass425" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-10461, -859)
+
+[node name="SmallMass426" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-9089, -2245)
+
+[node name="SmallMass427" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-8080, -1317)
+
+[node name="SmallMass428" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-10125, -173)
+
+[node name="SmallMass429" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-6667, -1115)
+
+[node name="SmallMass430" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-7595, -2393)
+
+[node name="SmallMass431" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-7366, -1518)
+
+[node name="SmallMass432" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-7945, -119)
+
+[node name="SmallMass433" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-15988, -1931)
+
+[node name="SmallMass434" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-12566, -2007)
+
+[node name="SmallMass435" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-15360, -752)
+
+[node name="SmallMass436" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-13449, -846)
+
+[node name="SmallMass437" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-12480, -415)
+
+[node name="SmallMass438" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-13933, -2151)
+
+[node name="SmallMass439" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-14861, -1505)
+
+[node name="SmallMass440" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-14457, -604)
+
+[node name="SmallMass441" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-16314, -940)
+
+[node name="SmallMass442" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-14942, -2326)
+
+[node name="SmallMass443" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-13933, -1398)
+
+[node name="SmallMass444" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-15978, -254)
+
+[node name="SmallMass445" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-12520, -1196)
+
+[node name="SmallMass446" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-13448, -2474)
+
+[node name="SmallMass447" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-13219, -1599)
+
+[node name="SmallMass448" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-13798, -200)
+
+[node name="SmallMass449" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-10449, -5315)
+
+[node name="SmallMass450" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-7027, -5391)
+
+[node name="SmallMass451" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-9821, -4136)
+
+[node name="SmallMass452" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-7910, -4230)
+
+[node name="SmallMass453" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-6941, -3799)
+
+[node name="SmallMass454" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-8394, -5535)
+
+[node name="SmallMass455" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-9322, -4889)
+
+[node name="SmallMass456" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-8918, -3988)
+
+[node name="SmallMass457" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-10775, -4324)
+
+[node name="SmallMass458" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-9403, -5710)
+
+[node name="SmallMass459" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-8394, -4782)
+
+[node name="SmallMass460" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-10439, -3638)
+
+[node name="SmallMass461" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-6981, -4580)
+
+[node name="SmallMass462" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-7909, -5858)
+
+[node name="SmallMass463" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-7680, -4983)
+
+[node name="SmallMass464" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-8259, -3584)
+
+[node name="SmallMass465" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-16302, -5396)
+
+[node name="SmallMass466" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-12880, -5472)
+
+[node name="SmallMass467" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-15674, -4217)
+
+[node name="SmallMass468" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-13763, -4311)
+
+[node name="SmallMass469" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-12794, -3880)
+
+[node name="SmallMass470" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-14247, -5616)
+
+[node name="SmallMass471" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-15175, -4970)
+
+[node name="SmallMass472" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-14771, -4069)
+
+[node name="SmallMass473" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-16628, -4405)
+
+[node name="SmallMass474" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-15256, -5791)
+
+[node name="SmallMass475" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-14247, -4863)
+
+[node name="SmallMass476" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-16292, -3719)
+
+[node name="SmallMass477" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-12834, -4661)
+
+[node name="SmallMass478" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-13762, -5939)
+
+[node name="SmallMass479" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-13533, -5064)
+
+[node name="SmallMass480" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-14112, -3665)
+
+[node name="SmallMass481" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-10221, -8493)
+
+[node name="SmallMass482" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-6799, -8569)
+
+[node name="SmallMass483" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-9593, -7314)
+
+[node name="SmallMass484" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-7682, -7408)
+
+[node name="SmallMass485" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-6713, -6977)
+
+[node name="SmallMass486" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-8166, -8713)
+
+[node name="SmallMass487" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-9094, -8067)
+
+[node name="SmallMass488" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-8690, -7166)
+
+[node name="SmallMass489" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-10547, -7502)
+
+[node name="SmallMass490" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-9175, -8888)
+
+[node name="SmallMass491" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-8166, -7960)
+
+[node name="SmallMass492" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-10211, -6816)
+
+[node name="SmallMass493" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-6753, -7758)
+
+[node name="SmallMass494" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-7681, -9036)
+
+[node name="SmallMass495" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-7452, -8161)
+
+[node name="SmallMass496" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-8031, -6762)
+
+[node name="SmallMass497" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-16074, -8574)
+
+[node name="SmallMass498" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-12652, -8650)
+
+[node name="SmallMass499" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-15446, -7395)
+
+[node name="SmallMass500" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-13535, -7489)
+
+[node name="SmallMass501" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-12566, -7058)
+
+[node name="SmallMass502" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-14019, -8794)
+
+[node name="SmallMass503" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-14947, -8148)
+
+[node name="SmallMass504" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-14543, -7247)
+
+[node name="SmallMass505" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-16400, -7583)
+
+[node name="SmallMass506" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-15028, -8969)
+
+[node name="SmallMass507" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-14019, -8041)
+
+[node name="SmallMass508" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-16064, -6897)
+
+[node name="SmallMass509" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-12606, -7839)
+
+[node name="SmallMass510" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-13534, -9117)
+
+[node name="SmallMass511" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-13305, -8242)
+
+[node name="SmallMass512" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-13884, -6843)
+
+[node name="SmallMass513" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-10620, 7841)
+
+[node name="SmallMass514" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-7198, 7765)
+
+[node name="SmallMass515" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-9992, 9020)
+
+[node name="SmallMass516" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-8081, 8926)
+
+[node name="SmallMass517" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-7112, 9357)
+
+[node name="SmallMass518" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-8565, 7621)
+
+[node name="SmallMass519" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-9493, 8267)
+
+[node name="SmallMass520" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-9089, 9168)
+
+[node name="SmallMass521" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-10946, 8832)
+
+[node name="SmallMass522" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-9574, 7446)
+
+[node name="SmallMass523" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-8565, 8374)
+
+[node name="SmallMass524" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-10610, 9518)
+
+[node name="SmallMass525" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-7152, 8576)
+
+[node name="SmallMass526" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-8080, 7298)
+
+[node name="SmallMass527" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-7851, 8173)
+
+[node name="SmallMass528" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-8430, 9572)
+
+[node name="SmallMass529" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-16473, 7760)
+
+[node name="SmallMass530" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-13051, 7684)
+
+[node name="SmallMass531" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-15845, 8939)
+
+[node name="SmallMass532" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-13934, 8845)
+
+[node name="SmallMass533" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-12965, 9276)
+
+[node name="SmallMass534" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-14418, 7540)
+
+[node name="SmallMass535" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-15346, 8186)
+
+[node name="SmallMass536" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-14942, 9087)
+
+[node name="SmallMass537" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-16799, 8751)
+
+[node name="SmallMass538" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-15427, 7365)
+
+[node name="SmallMass539" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-14418, 8293)
+
+[node name="SmallMass540" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-16463, 9437)
+
+[node name="SmallMass541" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-13005, 8495)
+
+[node name="SmallMass542" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-13933, 7217)
+
+[node name="SmallMass543" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-13704, 8092)
+
+[node name="SmallMass544" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-14283, 9491)
+
+[node name="SmallMass545" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-10392, 4663)
+
+[node name="SmallMass546" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-6970, 4587)
+
+[node name="SmallMass547" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-9764, 5842)
+
+[node name="SmallMass548" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-7853, 5748)
+
+[node name="SmallMass549" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-6884, 6179)
+
+[node name="SmallMass550" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-8337, 4443)
+
+[node name="SmallMass551" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-9265, 5089)
+
+[node name="SmallMass552" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-8861, 5990)
+
+[node name="SmallMass553" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-10718, 5654)
+
+[node name="SmallMass554" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-9346, 4268)
+
+[node name="SmallMass555" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-8337, 5196)
+
+[node name="SmallMass556" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-10382, 6340)
+
+[node name="SmallMass557" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-6924, 5398)
+
+[node name="SmallMass558" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-7852, 4120)
+
+[node name="SmallMass559" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-7623, 4995)
+
+[node name="SmallMass560" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-8202, 6394)
+
+[node name="SmallMass561" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-16245, 4582)
+
+[node name="SmallMass562" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-12823, 4506)
+
+[node name="SmallMass563" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-15617, 5761)
+
+[node name="SmallMass564" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-13706, 5667)
+
+[node name="SmallMass565" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-12737, 6098)
+
+[node name="SmallMass566" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-14190, 4362)
+
+[node name="SmallMass567" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-15118, 5008)
+
+[node name="SmallMass568" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-14714, 5909)
+
+[node name="SmallMass569" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-16571, 5573)
+
+[node name="SmallMass570" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-15199, 4187)
+
+[node name="SmallMass571" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-14190, 5115)
+
+[node name="SmallMass572" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-16235, 6259)
+
+[node name="SmallMass573" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-12777, 5317)
+
+[node name="SmallMass574" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-13705, 4039)
+
+[node name="SmallMass575" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-13476, 4914)
+
+[node name="SmallMass576" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-14055, 6313)
+
+[node name="SmallMass577" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(819, 21003)
+
+[node name="SmallMass578" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(4241, 20927)
+
+[node name="SmallMass579" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(1447, 22182)
+
+[node name="SmallMass580" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(3358, 22088)
+
+[node name="SmallMass581" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(4327, 22519)
+
+[node name="SmallMass582" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(2874, 20783)
+
+[node name="SmallMass583" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(1946, 21429)
+
+[node name="SmallMass584" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(2350, 22330)
+
+[node name="SmallMass585" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(493, 21994)
+
+[node name="SmallMass586" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(1865, 20608)
+
+[node name="SmallMass587" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(2874, 21536)
+
+[node name="SmallMass588" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(829, 22680)
+
+[node name="SmallMass589" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(4287, 21738)
+
+[node name="SmallMass590" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(3359, 20460)
+
+[node name="SmallMass591" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(3588, 21335)
+
+[node name="SmallMass592" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(3009, 22734)
+
+[node name="SmallMass593" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-5034, 20922)
+
+[node name="SmallMass594" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-1612, 20846)
+
+[node name="SmallMass595" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-4406, 22101)
+
+[node name="SmallMass596" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-2495, 22007)
+
+[node name="SmallMass597" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-1526, 22438)
+
+[node name="SmallMass598" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-2979, 20702)
+
+[node name="SmallMass599" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-3907, 21348)
+
+[node name="SmallMass600" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-3503, 22249)
+
+[node name="SmallMass601" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-5360, 21913)
+
+[node name="SmallMass602" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-3988, 20527)
+
+[node name="SmallMass603" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-2979, 21455)
+
+[node name="SmallMass604" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-5024, 22599)
+
+[node name="SmallMass605" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-1566, 21657)
+
+[node name="SmallMass606" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-2494, 20379)
+
+[node name="SmallMass607" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-2265, 21254)
+
+[node name="SmallMass608" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-2844, 22653)
+
+[node name="SmallMass609" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(1047, 17825)
+
+[node name="SmallMass610" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(4469, 17749)
+
+[node name="SmallMass611" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(1675, 19004)
+
+[node name="SmallMass612" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(3586, 18910)
+
+[node name="SmallMass613" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(4555, 19341)
+
+[node name="SmallMass614" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(3102, 17605)
+
+[node name="SmallMass615" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(2174, 18251)
+
+[node name="SmallMass616" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(2578, 19152)
+
+[node name="SmallMass617" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(721, 18816)
+
+[node name="SmallMass618" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(2093, 17430)
+
+[node name="SmallMass619" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(3102, 18358)
+
+[node name="SmallMass620" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(1057, 19502)
+
+[node name="SmallMass621" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(4515, 18560)
+
+[node name="SmallMass622" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(3587, 17282)
+
+[node name="SmallMass623" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(3816, 18157)
+
+[node name="SmallMass624" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(3237, 19556)
+
+[node name="SmallMass625" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-4806, 17744)
+
+[node name="SmallMass626" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-1384, 17668)
+
+[node name="SmallMass627" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-4178, 18923)
+
+[node name="SmallMass628" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-2267, 18829)
+
+[node name="SmallMass629" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-1298, 19260)
+
+[node name="SmallMass630" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-2751, 17524)
+
+[node name="SmallMass631" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-3679, 18170)
+
+[node name="SmallMass632" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-3275, 19071)
+
+[node name="SmallMass633" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-5132, 18735)
+
+[node name="SmallMass634" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-3760, 17349)
+
+[node name="SmallMass635" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-2751, 18277)
+
+[node name="SmallMass636" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-4796, 19421)
+
+[node name="SmallMass637" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-1338, 18479)
+
+[node name="SmallMass638" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-2266, 17201)
+
+[node name="SmallMass639" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-2037, 18076)
+
+[node name="SmallMass640" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-2616, 19475)
+
+[node name="SmallMass641" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(12479, 21117)
+
+[node name="SmallMass642" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(15901, 21041)
+
+[node name="SmallMass643" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(13107, 22296)
+
+[node name="SmallMass644" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(15018, 22202)
+
+[node name="SmallMass645" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(15987, 22633)
+
+[node name="SmallMass646" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(14534, 20897)
+
+[node name="SmallMass647" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(13606, 21543)
+
+[node name="SmallMass648" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(14010, 22444)
+
+[node name="SmallMass649" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(12153, 22108)
+
+[node name="SmallMass650" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(13525, 20722)
+
+[node name="SmallMass651" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(14534, 21650)
+
+[node name="SmallMass652" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(12489, 22794)
+
+[node name="SmallMass653" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(15947, 21852)
+
+[node name="SmallMass654" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(15019, 20574)
+
+[node name="SmallMass655" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(15248, 21449)
+
+[node name="SmallMass656" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(14669, 22848)
+
+[node name="SmallMass657" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(6626, 21036)
+
+[node name="SmallMass658" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(10048, 20960)
+
+[node name="SmallMass659" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(7254, 22215)
+
+[node name="SmallMass660" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(9165, 22121)
+
+[node name="SmallMass661" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(10134, 22552)
+
+[node name="SmallMass662" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(8681, 20816)
+
+[node name="SmallMass663" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(7753, 21462)
+
+[node name="SmallMass664" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(8157, 22363)
+
+[node name="SmallMass665" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(6300, 22027)
+
+[node name="SmallMass666" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(7672, 20641)
+
+[node name="SmallMass667" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(8681, 21569)
+
+[node name="SmallMass668" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(6636, 22713)
+
+[node name="SmallMass669" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(10094, 21771)
+
+[node name="SmallMass670" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(9166, 20493)
+
+[node name="SmallMass671" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(9395, 21368)
+
+[node name="SmallMass672" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(8816, 22767)
+
+[node name="SmallMass673" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(12707, 17939)
+
+[node name="SmallMass674" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(16129, 17863)
+
+[node name="SmallMass675" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(13335, 19118)
+
+[node name="SmallMass676" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(15246, 19024)
+
+[node name="SmallMass677" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(16215, 19455)
+
+[node name="SmallMass678" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(14762, 17719)
+
+[node name="SmallMass679" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(13834, 18365)
+
+[node name="SmallMass680" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(14238, 19266)
+
+[node name="SmallMass681" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(12381, 18930)
+
+[node name="SmallMass682" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(13753, 17544)
+
+[node name="SmallMass683" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(14762, 18472)
+
+[node name="SmallMass684" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(12717, 19616)
+
+[node name="SmallMass685" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(16175, 18674)
+
+[node name="SmallMass686" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(15247, 17396)
+
+[node name="SmallMass687" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(15476, 18271)
+
+[node name="SmallMass688" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(14897, 19670)
+
+[node name="SmallMass689" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(6854, 17858)
+
+[node name="SmallMass690" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(10276, 17782)
+
+[node name="SmallMass691" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(7482, 19037)
+
+[node name="SmallMass692" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(9393, 18943)
+
+[node name="SmallMass693" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(10362, 19374)
+
+[node name="SmallMass694" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(8909, 17638)
+
+[node name="SmallMass695" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(7981, 18284)
+
+[node name="SmallMass696" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(8385, 19185)
+
+[node name="SmallMass697" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(6528, 18849)
+
+[node name="SmallMass698" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(7900, 17463)
+
+[node name="SmallMass699" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(8909, 18391)
+
+[node name="SmallMass700" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(6864, 19535)
+
+[node name="SmallMass701" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(10322, 18593)
+
+[node name="SmallMass702" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(9394, 17315)
+
+[node name="SmallMass703" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(9623, 18190)
+
+[node name="SmallMass704" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(9044, 19589)
+
+[node name="SmallMass705" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(733, 14360)
+
+[node name="SmallMass706" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(4155, 14284)
+
+[node name="SmallMass707" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(1361, 15539)
+
+[node name="SmallMass708" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(3272, 15445)
+
+[node name="SmallMass709" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(4241, 15876)
+
+[node name="SmallMass710" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(2788, 14140)
+
+[node name="SmallMass711" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(1860, 14786)
+
+[node name="SmallMass712" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(2264, 15687)
+
+[node name="SmallMass713" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(407, 15351)
+
+[node name="SmallMass714" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(1779, 13965)
+
+[node name="SmallMass715" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(2788, 14893)
+
+[node name="SmallMass716" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(743, 16037)
+
+[node name="SmallMass717" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(4201, 15095)
+
+[node name="SmallMass718" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(3273, 13817)
+
+[node name="SmallMass719" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(3502, 14692)
+
+[node name="SmallMass720" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(2923, 16091)
+
+[node name="SmallMass721" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-5120, 14279)
+
+[node name="SmallMass722" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-1698, 14203)
+
+[node name="SmallMass723" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-4492, 15458)
+
+[node name="SmallMass724" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-2581, 15364)
+
+[node name="SmallMass725" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-1612, 15795)
+
+[node name="SmallMass726" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-3065, 14059)
+
+[node name="SmallMass727" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-3993, 14705)
+
+[node name="SmallMass728" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-3589, 15606)
+
+[node name="SmallMass729" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-5446, 15270)
+
+[node name="SmallMass730" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-4074, 13884)
+
+[node name="SmallMass731" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-3065, 14812)
+
+[node name="SmallMass732" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-5110, 15956)
+
+[node name="SmallMass733" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-1652, 15014)
+
+[node name="SmallMass734" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-2580, 13736)
+
+[node name="SmallMass735" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-2351, 14611)
+
+[node name="SmallMass736" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-2930, 16010)
+
+[node name="SmallMass737" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(961, 11182)
+
+[node name="SmallMass738" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(4383, 11106)
+
+[node name="SmallMass739" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(1589, 12361)
+
+[node name="SmallMass740" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(3500, 12267)
+
+[node name="SmallMass741" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(4469, 12698)
+
+[node name="SmallMass742" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(3016, 10962)
+
+[node name="SmallMass743" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(2088, 11608)
+
+[node name="SmallMass744" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(2492, 12509)
+
+[node name="SmallMass745" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(635, 12173)
+
+[node name="SmallMass746" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(2007, 10787)
+
+[node name="SmallMass747" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(3016, 11715)
+
+[node name="SmallMass748" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(971, 12859)
+
+[node name="SmallMass749" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(4429, 11917)
+
+[node name="SmallMass750" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(3501, 10639)
+
+[node name="SmallMass751" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(3730, 11514)
+
+[node name="SmallMass752" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(3151, 12913)
+
+[node name="SmallMass753" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-4892, 11101)
+
+[node name="SmallMass754" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-1470, 11025)
+
+[node name="SmallMass755" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-4264, 12280)
+
+[node name="SmallMass756" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-2353, 12186)
+
+[node name="SmallMass757" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-1384, 12617)
+
+[node name="SmallMass758" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-2837, 10881)
+
+[node name="SmallMass759" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-3765, 11527)
+
+[node name="SmallMass760" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-3361, 12428)
+
+[node name="SmallMass761" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-5218, 12092)
+
+[node name="SmallMass762" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-3846, 10706)
+
+[node name="SmallMass763" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-2837, 11634)
+
+[node name="SmallMass764" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-4882, 12778)
+
+[node name="SmallMass765" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-1424, 11836)
+
+[node name="SmallMass766" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-2352, 10558)
+
+[node name="SmallMass767" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-2123, 11433)
+
+[node name="SmallMass768" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-2702, 12832)
+
+[node name="SmallMass769" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(12393, 14474)
+
+[node name="SmallMass770" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(15815, 14398)
+
+[node name="SmallMass771" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(13021, 15653)
+
+[node name="SmallMass772" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(14932, 15559)
+
+[node name="SmallMass773" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(15901, 15990)
+
+[node name="SmallMass774" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(14448, 14254)
+
+[node name="SmallMass775" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(13520, 14900)
+
+[node name="SmallMass776" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(13924, 15801)
+
+[node name="SmallMass777" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(12067, 15465)
+
+[node name="SmallMass778" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(13439, 14079)
+
+[node name="SmallMass779" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(14448, 15007)
+
+[node name="SmallMass780" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(12403, 16151)
+
+[node name="SmallMass781" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(15861, 15209)
+
+[node name="SmallMass782" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(14933, 13931)
+
+[node name="SmallMass783" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(15162, 14806)
+
+[node name="SmallMass784" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(14583, 16205)
+
+[node name="SmallMass785" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(6540, 14393)
+
+[node name="SmallMass786" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(9962, 14317)
+
+[node name="SmallMass787" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(7168, 15572)
+
+[node name="SmallMass788" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(9079, 15478)
+
+[node name="SmallMass789" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(10048, 15909)
+
+[node name="SmallMass790" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(8595, 14173)
+
+[node name="SmallMass791" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(7667, 14819)
+
+[node name="SmallMass792" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(8071, 15720)
+
+[node name="SmallMass793" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(6214, 15384)
+
+[node name="SmallMass794" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(7586, 13998)
+
+[node name="SmallMass795" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(8595, 14926)
+
+[node name="SmallMass796" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(6550, 16070)
+
+[node name="SmallMass797" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(10008, 15128)
+
+[node name="SmallMass798" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(9080, 13850)
+
+[node name="SmallMass799" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(9309, 14725)
+
+[node name="SmallMass800" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(8730, 16124)
+
+[node name="SmallMass801" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(12621, 11296)
+
+[node name="SmallMass802" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(16043, 11220)
+
+[node name="SmallMass803" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(13249, 12475)
+
+[node name="SmallMass804" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(15160, 12381)
+
+[node name="SmallMass805" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(16129, 12812)
+
+[node name="SmallMass806" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(14676, 11076)
+
+[node name="SmallMass807" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(13748, 11722)
+
+[node name="SmallMass808" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(14152, 12623)
+
+[node name="SmallMass809" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(12295, 12287)
+
+[node name="SmallMass810" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(13667, 10901)
+
+[node name="SmallMass811" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(14676, 11829)
+
+[node name="SmallMass812" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(12631, 12973)
+
+[node name="SmallMass813" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(16089, 12031)
+
+[node name="SmallMass814" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(15161, 10753)
+
+[node name="SmallMass815" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(15390, 11628)
+
+[node name="SmallMass816" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(14811, 13027)
+
+[node name="SmallMass817" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(6768, 11215)
+
+[node name="SmallMass818" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(10190, 11139)
+
+[node name="SmallMass819" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(7396, 12394)
+
+[node name="SmallMass820" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(9307, 12300)
+
+[node name="SmallMass821" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(10276, 12731)
+
+[node name="SmallMass822" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(8823, 10995)
+
+[node name="SmallMass823" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(7895, 11641)
+
+[node name="SmallMass824" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(8299, 12542)
+
+[node name="SmallMass825" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(6442, 12206)
+
+[node name="SmallMass826" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(7814, 10820)
+
+[node name="SmallMass827" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(8823, 11748)
+
+[node name="SmallMass828" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(6778, 12892)
+
+[node name="SmallMass829" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(10236, 11950)
+
+[node name="SmallMass830" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(9308, 10672)
+
+[node name="SmallMass831" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(9537, 11547)
+
+[node name="SmallMass832" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(8958, 12946)
+
+[node name="SmallMass833" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(562, 27516)
+
+[node name="SmallMass834" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(3984, 27440)
+
+[node name="SmallMass835" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(1190, 28695)
+
+[node name="SmallMass836" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(3101, 28601)
+
+[node name="SmallMass837" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(4070, 29032)
+
+[node name="SmallMass838" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(2617, 27296)
+
+[node name="SmallMass839" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(1689, 27942)
+
+[node name="SmallMass840" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(2093, 28843)
+
+[node name="SmallMass841" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(236, 28507)
+
+[node name="SmallMass842" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(1608, 27121)
+
+[node name="SmallMass843" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(2617, 28049)
+
+[node name="SmallMass844" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(572, 29193)
+
+[node name="SmallMass845" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(4030, 28251)
+
+[node name="SmallMass846" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(3102, 26973)
+
+[node name="SmallMass847" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(3331, 27848)
+
+[node name="SmallMass848" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(2752, 29247)
+
+[node name="SmallMass849" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-5291, 27435)
+
+[node name="SmallMass850" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-1869, 27359)
+
+[node name="SmallMass851" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-4663, 28614)
+
+[node name="SmallMass852" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-2752, 28520)
+
+[node name="SmallMass853" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-1783, 28951)
+
+[node name="SmallMass854" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-3236, 27215)
+
+[node name="SmallMass855" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-4164, 27861)
+
+[node name="SmallMass856" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-3760, 28762)
+
+[node name="SmallMass857" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-5617, 28426)
+
+[node name="SmallMass858" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-4245, 27040)
+
+[node name="SmallMass859" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-3236, 27968)
+
+[node name="SmallMass860" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-5281, 29112)
+
+[node name="SmallMass861" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-1823, 28170)
+
+[node name="SmallMass862" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-2751, 26892)
+
+[node name="SmallMass863" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-2522, 27767)
+
+[node name="SmallMass864" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-3101, 29166)
+
+[node name="SmallMass865" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(790, 24338)
+
+[node name="SmallMass866" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(4212, 24262)
+
+[node name="SmallMass867" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(1418, 25517)
+
+[node name="SmallMass868" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(3329, 25423)
+
+[node name="SmallMass869" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(4298, 25854)
+
+[node name="SmallMass870" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(2845, 24118)
+
+[node name="SmallMass871" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(1917, 24764)
+
+[node name="SmallMass872" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(2321, 25665)
+
+[node name="SmallMass873" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(464, 25329)
+
+[node name="SmallMass874" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(1836, 23943)
+
+[node name="SmallMass875" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(2845, 24871)
+
+[node name="SmallMass876" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(800, 26015)
+
+[node name="SmallMass877" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(4258, 25073)
+
+[node name="SmallMass878" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(3330, 23795)
+
+[node name="SmallMass879" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(3559, 24670)
+
+[node name="SmallMass880" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(2980, 26069)
+
+[node name="SmallMass881" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-5063, 24257)
+
+[node name="SmallMass882" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-1641, 24181)
+
+[node name="SmallMass883" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-4435, 25436)
+
+[node name="SmallMass884" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-2524, 25342)
+
+[node name="SmallMass885" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-1555, 25773)
+
+[node name="SmallMass886" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-3008, 24037)
+
+[node name="SmallMass887" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-3936, 24683)
+
+[node name="SmallMass888" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-3532, 25584)
+
+[node name="SmallMass889" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-5389, 25248)
+
+[node name="SmallMass890" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-4017, 23862)
+
+[node name="SmallMass891" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-3008, 24790)
+
+[node name="SmallMass892" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-5053, 25934)
+
+[node name="SmallMass893" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-1595, 24992)
+
+[node name="SmallMass894" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-2523, 23714)
+
+[node name="SmallMass895" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-2294, 24589)
+
+[node name="SmallMass896" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-2873, 25988)
+
+[node name="SmallMass897" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(12222, 27630)
+
+[node name="SmallMass898" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(15644, 27554)
+
+[node name="SmallMass899" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(12850, 28809)
+
+[node name="SmallMass900" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(14761, 28715)
+
+[node name="SmallMass901" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(15730, 29146)
+
+[node name="SmallMass902" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(14277, 27410)
+
+[node name="SmallMass903" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(13349, 28056)
+
+[node name="SmallMass904" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(13753, 28957)
+
+[node name="SmallMass905" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(11896, 28621)
+
+[node name="SmallMass906" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(13268, 27235)
+
+[node name="SmallMass907" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(14277, 28163)
+
+[node name="SmallMass908" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(12232, 29307)
+
+[node name="SmallMass909" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(15690, 28365)
+
+[node name="SmallMass910" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(14762, 27087)
+
+[node name="SmallMass911" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(14991, 27962)
+
+[node name="SmallMass912" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(14412, 29361)
+
+[node name="SmallMass913" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(6369, 27549)
+
+[node name="SmallMass914" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(9791, 27473)
+
+[node name="SmallMass915" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(6997, 28728)
+
+[node name="SmallMass916" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(8908, 28634)
+
+[node name="SmallMass917" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(9877, 29065)
+
+[node name="SmallMass918" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(8424, 27329)
+
+[node name="SmallMass919" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(7496, 27975)
+
+[node name="SmallMass920" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(7900, 28876)
+
+[node name="SmallMass921" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(6043, 28540)
+
+[node name="SmallMass922" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(7415, 27154)
+
+[node name="SmallMass923" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(8424, 28082)
+
+[node name="SmallMass924" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(6379, 29226)
+
+[node name="SmallMass925" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(9837, 28284)
+
+[node name="SmallMass926" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(8909, 27006)
+
+[node name="SmallMass927" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(9138, 27881)
+
+[node name="SmallMass928" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(8559, 29280)
+
+[node name="SmallMass929" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(12450, 24452)
+
+[node name="SmallMass930" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(15872, 24376)
+
+[node name="SmallMass931" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(13078, 25631)
+
+[node name="SmallMass932" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(14989, 25537)
+
+[node name="SmallMass933" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(15958, 25968)
+
+[node name="SmallMass934" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(14505, 24232)
+
+[node name="SmallMass935" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(13577, 24878)
+
+[node name="SmallMass936" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(13981, 25779)
+
+[node name="SmallMass937" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(12124, 25443)
+
+[node name="SmallMass938" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(13496, 24057)
+
+[node name="SmallMass939" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(14505, 24985)
+
+[node name="SmallMass940" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(12460, 26129)
+
+[node name="SmallMass941" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(15918, 25187)
+
+[node name="SmallMass942" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(14990, 23909)
+
+[node name="SmallMass943" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(15219, 24784)
+
+[node name="SmallMass944" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(14640, 26183)
+
+[node name="SmallMass945" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(6597, 24371)
+
+[node name="SmallMass946" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(10019, 24295)
+
+[node name="SmallMass947" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(7225, 25550)
+
+[node name="SmallMass948" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(9136, 25456)
+
+[node name="SmallMass949" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(10105, 25887)
+
+[node name="SmallMass950" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(8652, 24151)
+
+[node name="SmallMass951" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(7724, 24797)
+
+[node name="SmallMass952" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(8128, 25698)
+
+[node name="SmallMass953" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(6271, 25362)
+
+[node name="SmallMass954" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(7643, 23976)
+
+[node name="SmallMass955" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(8652, 24904)
+
+[node name="SmallMass956" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(6607, 26048)
+
+[node name="SmallMass957" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(10065, 25106)
+
+[node name="SmallMass958" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(9137, 23828)
+
+[node name="SmallMass959" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(9366, 24703)
+
+[node name="SmallMass960" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(8787, 26102)
+
+[node name="SmallMass961" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-10544, 21331)
+
+[node name="SmallMass962" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-7122, 21255)
+
+[node name="SmallMass963" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-9916, 22510)
+
+[node name="SmallMass964" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-8005, 22416)
+
+[node name="SmallMass965" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-7036, 22847)
+
+[node name="SmallMass966" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-8489, 21111)
+
+[node name="SmallMass967" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-9417, 21757)
+
+[node name="SmallMass968" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-9013, 22658)
+
+[node name="SmallMass969" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-10870, 22322)
+
+[node name="SmallMass970" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-9498, 20936)
+
+[node name="SmallMass971" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-8489, 21864)
+
+[node name="SmallMass972" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-10534, 23008)
+
+[node name="SmallMass973" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-7076, 22066)
+
+[node name="SmallMass974" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-8004, 20788)
+
+[node name="SmallMass975" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-7775, 21663)
+
+[node name="SmallMass976" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-8354, 23062)
+
+[node name="SmallMass977" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-16397, 21250)
+
+[node name="SmallMass978" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-12975, 21174)
+
+[node name="SmallMass979" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-15769, 22429)
+
+[node name="SmallMass980" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-13858, 22335)
+
+[node name="SmallMass981" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-12889, 22766)
+
+[node name="SmallMass982" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-14342, 21030)
+
+[node name="SmallMass983" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-15270, 21676)
+
+[node name="SmallMass984" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-14866, 22577)
+
+[node name="SmallMass985" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-16723, 22241)
+
+[node name="SmallMass986" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-15351, 20855)
+
+[node name="SmallMass987" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-14342, 21783)
+
+[node name="SmallMass988" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-16387, 22927)
+
+[node name="SmallMass989" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-12929, 21985)
+
+[node name="SmallMass990" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-13857, 20707)
+
+[node name="SmallMass991" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-13628, 21582)
+
+[node name="SmallMass992" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-14207, 22981)
+
+[node name="SmallMass993" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-10316, 18153)
+
+[node name="SmallMass994" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-6894, 18077)
+
+[node name="SmallMass995" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-9688, 19332)
+
+[node name="SmallMass996" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-7777, 19238)
+
+[node name="SmallMass997" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-6808, 19669)
+
+[node name="SmallMass998" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-8261, 17933)
+
+[node name="SmallMass999" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-9189, 18579)
+
+[node name="SmallMass1000" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-8785, 19480)
+
+[node name="LargeMass6" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-23350, 0)
+mass = 1e+18
+
+[node name="LargeMass7" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(17468, 0)
+mass = 1e+18
+
+[node name="LargeMass8" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-91, 16744)
+mass = 1e+18
+
+[node name="LargeMass9" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(0, -16654)
+mass = 1e+18
+
+[node name="LargeMass10" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-17378, -16563)
+mass = 1e+18
+
+[node name="LargeMass11" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(11495, -16744)
+mass = 1e+18
+
+[node name="LargeMass12" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(11404, 16654)
+mass = 1e+18
+
+[node name="LargeMass13" parent="Space" instance=ExtResource("1_u2ifx")]
+position = Vector2(-17468, 17106)
+mass = 1e+18
